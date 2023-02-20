@@ -14,8 +14,11 @@
     <title>Tienda de Infinity Games</title>
 </head>
 <body class="container-fluid">
-        <header class="row fixed-top">
+    <!-- HEADER -->
+        <header class="row fixed-top justify-content-between">
+            <!-- NAVBAR -->
             <nav class="navbar fixed-top">
+                <!-- MENU -->
                 <div class="container-fluid opacity-75">
                     <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -27,38 +30,44 @@
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-start">
-                                <div class="p-4 d-flex flex-column">
-                                    <a class="mt-3 text-white text-decoration-none fs-2" href="#">INICIO</a>
-                                    <a class="mt-3 text-white text-decoration-none fs-2" href="#">TIENDA</a>
-                                    <a class="mt-3 text-white text-decoration-none fs-2" href="#">BIBLIOTECA</a>
-                                    <a class="mt-3 text-white text-decoration-none fs-2" href="#">CONTACTO</a>
-                                    <a class="mt-3 text-white text-decoration-none fs-2" href="#">ACERCA DE NOSOTROS</a>
+                                <div class="p-md-4 d-flex flex-column">
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">TIENDA</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">BIBLIOTECA</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">ACERCA DE NOSOTROS</a>
                                 </div>
                             </ul>
                         </div>
                     </div>
-                    <i class="bi bi-person-fill text-white mx-4"></i>
+                    <div class="header-title">
+                        <h1 class="title text-white fs-3 d-none d-md-block">INFINITY GAMES</h1>
+                    </div>
+                    <i class="bi bi-person-fill text-white mx-2"></i>
                 </div>
             </nav>
         </header>
+        <!-- MAIN -->
         <main class="row main">
+            <!-- ASIDE -->
             <section class="d-none d-md-block col-md-1 blue">
                 <div class="row sticky-top pt-5">
                     <div class="d-flex mb-5 justify-content-center">
-                        <i class="icon_aside text-white bi bi-tag-fill"></i>
+                        <a href="#" class="icon_aside text-white bi bi-tag-fill"></a>
                     </div>          
                     <div class="d-flex mb-5 justify-content-center">
-                        <i class="icon_aside text-white bi bi-cart-fill"></i>
+                        <a href="#" class="icon_aside text-white bi bi-cart-fill"></a>
                     </div>
                     <div class="d-flex mb-5 justify-content-center">
-                        <i class="icon_aside text-white bi bi-heart-fill"></i>
+                        <a href="#" class="icon_aside text-white bi bi-heart-fill"></a>
                     </div>
                     <div class="d-flex mb-5 justify-content-center">
-                        <i class="icon_aside text-white bi bi-cloud-arrow-down-fill"></i>
+                        <a href="#" class="icon_aside text-white bi bi-cloud-arrow-down-fill"></a>
                     </div>
                 </div>  
             </section>
-            <section class="col-12 col-md-11 gray">
+            <section class="col-12 col-md-11 gray mt-5 mt-md-3">
+                <!-- MAIN ARTICLE -->
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 gray p-0">
                         <div class="row mt-4 my-md-5 mb-lg-4 mx-0 justify-content-center">
@@ -80,6 +89,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- SECONDARY ARTICLES -->
                 <div class="row d-flex mt-md-3 mt-lg-5 gap-md-5 justify-content-center">
                     <article class="col-12 col-md-4 col-lg-3 p-0 mb-3 mb-md-4 mb-lg-5 d-flex justify-content-center">
                         <div class="card w-100 p-5 p-md-0 gray border-0">
@@ -213,17 +223,18 @@
                 </div>
             </section>
         </main>
+        <!-- FOOTER -->
         <footer class="row bg-primary">
             <div class="footer p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
                 <div class="footer_title justify-content-center align-items-center d-flex flex-column">
-                    <h1 class="text-white mb-5">Infinity games</h1>
-                    <a class="text-white mb-5 fs-1 text-decoration-none my-2" href="#">CONTACTO</a>
+                    <h1 class="text-white mb-5 fs-md-1 ">Infinity games</h1>
+                    <a class="text-white mb-5 fs-2 text-decoration-none my-2" href="#">CONTACTO</a>
                 </div>
-                <div class="media align-items-center my-2">
-                    <a class="bi bi-twitter text-white fs-1 mx-5" href="#"></a>
-                    <a class="bi bi-facebook text-white fs-1 mx-5" href="#"></a>
-                    <a class="bi bi-youtube text-white fs-1 mx-5" href="#"></a>
-                    <a class="bi bi-instagram text-white fs-1 mx-5" href="#"></a>
+                <div class="media flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
+                    <a class="bi bi-twitter text-white fs-1" href="#"></a>
+                    <a class="bi bi-facebook text-white fs-1" href="#"></a>
+                    <a class="bi bi-youtube text-white fs-1" href="#"></a>
+                    <a class="bi bi-instagram text-white fs-1" href="#"></a>
                 </div>
             </div>
         </footer>
