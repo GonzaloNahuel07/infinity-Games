@@ -3,14 +3,10 @@ body {
     letter-spacing: 2px;
 }
 h1 {
-    font-size: 3.5dvw;
+    font-size: 5dvw;
 }
-.icon_aside {
-    font-size: 50px;
-}
-.icon_page {
-    font-size: 45px;
-}
+
+/*      Colors     */
 
 .blue {
     background-color: #000123 ;
@@ -24,15 +20,51 @@ h1 {
 .text-pink {
     color: #FF0F7B;
 }
-.card {
-    width: 30dvw;
-}
-.icon_aside {
-    font-size: 50px;
-}
 .icon_page {
-    font-size: 45px;
+    font-size: 8dvw;
+    color: #FFFFFF;
 }
+.icon_star_top {
+    font-size: 6dvw;
+}
+.icon_star {
+    font-size: 5dvw;
+}
+
+
+
 .card-title {
-    font-size: 2dvw;
+    font-size: 5dvw;
+}
+
+
+/*Tablet styles*/
+
+@media (min-width: 768px) {
+    .icon_aside {
+        font-size: 4dvw;
+    }
+    .icon_star_top {
+        font-size: 5dvw;
+    }
+    .card-title {
+        font-size: 3dvw;
+    }
+    .icon_star {
+        font-size: 3dvw;
+    }
+}
+
+/*Desktop styles*/
+
+@media (min-width: 992px) {
+    .icon_page {
+        font-size: 4dvw;
+    }
+    h1 {
+        font-size: 4dvw;
+    }
+    .card-title {
+        font-size: 2dvw;
+    }
 }
