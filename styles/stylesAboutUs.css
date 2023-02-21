@@ -1,0 +1,122 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+h1 {
+    font-size: 5dvw;
+}
+
+/*      Colors     */
+
+.blue {
+    background-color: #000123 ;
+}
+.white {
+    background-color: #FFFFFF;
+}
+.gray {
+    background-color: #272727;
+}
+.text-pink {
+    color: #FF0F7B;
+}
+.icon_page {
+    font-size: 8dvw;
+    color: #FFFFFF;
+}
+.icon_star_top {
+    font-size: 6dvw;
+}
+.icon_star {
+    font-size: 5dvw;
+}
+
+.border-color-pink {
+    border-color: #FF0F7B;
+}
+
+/*About Us Main*/
+
+.aboutUsBackground {
+    background-image: url(../images/background-mouse.png);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+/*About Us Cards*/
+
+.aboutUsCards {
+    background-image: url(../images/background-mouse.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/*About Us Arrow Animation*/
+
+.arrow {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 40%;
+    }
+  }
+
+
+/*About Us Arrow Animation*/
+
+.arrowCards {
+    height: 60px;
+    animation-duration: 1.5s;
+    animation-name: slidein2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slidein2 {
+    from {
+      padding-top: 7%;
+    }
+  }
+
+/*Tablet styles*/
+
+@media (min-width: 768px) {
+    .icon_aside {
+        font-size: 4dvw;
+    }
+    .icon_star_top {
+        font-size: 5dvw;
+    }
+    .card-title {
+        font-size: 3dvw;
+    }
+    .icon_star {
+        font-size: 3dvw;
+    }
+    .arrowCards {
+        height: 100px;
+    }
+}
+
+/*Desktop styles*/
+
+@media (min-width: 992px) {
+    .icon_page {
+        font-size: 4dvw;
+    }
+    h1 {
+        font-size: 4dvw;
+    }
+    .card-title {
+        font-size: 2dvw;
+    }
+    .arrowCards {
+        height: 130px;
+    }
+}
