@@ -10,6 +10,7 @@ h1 {
     margin-top: 5dvw;
 }
 
+
 /*      Colors     */
 
 .blue, .footer, .navbar, .offcanvas {
@@ -44,6 +45,15 @@ h1 {
     font-size: 5dvw;
 }
 
+.fs-md-10 {
+    font-size: 4.5dvw;
+}
+.fs-10 {
+    font-size: 10dvw;
+}
+.star-hover {
+    visibility: hidden;
+}
 
 /*Tablet styles*/
 
@@ -71,6 +81,10 @@ h1 {
         margin-left: 3dvw;
         margin-top: 3dvw;
     }
+    .opacity-md-100 {
+        opacity: 100% !important;
+    }
+
 }
 
 /*Desktop styles*/
@@ -96,4 +110,23 @@ h1 {
         font-size: 3.5dvw;
         color: #FFFFFF;
     } 
+    .card-img-top:hover {
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        filter: opacity(0.3);
+    }
+    .card-img-top {
+        overflow:hidden;
+    }
+    .star-hover {
+        display: none;
+    }
+    .star-hover:hover {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
 }
