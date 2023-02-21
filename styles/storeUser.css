@@ -1,39 +1,66 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--font-orbiton);
+:root {
+    --bubblegum-pink: #FF0F7B;
+    --dark-blue: #000123;
+    --dark-gray: #272727;
+    --light-gray: #B5B5B5;
+    --white: #FFFFFF;
+    --font-orbiton: 'Orbitron', sans-serif;
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* body {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
+    background-color: #000123;
 }
 h1 {
     font-size: 5dvw;
 }
 
-.main {
-    margin-top: 5dvw;
-}
+.mt-10 {
+    margin-top: 12dvw;
+} */
 
 /*      Colors     */
-
+/* 
 .blue, .footer, .navbar, .offcanvas {
-    background-color: #000123 !important;
+    background-color: #000123 ;
 }
 .white {
-    background-color: #FFFFFF !important;
+    background-color: #FFFFFF;
 }
 .gray {
-    background-color: #272727 !important;
+    background-color: #272727;
 }
 .text-pink {
     color: #FF0F7B;
 }
+.bg-pink {
+    background-color: #FF0F7B;
+}
 .icon_page {
     font-size: 8dvw;
     color: #FFFFFF;
+}
+.icon_page:active {
+    font-size: 7.8dvw;
+    color: #000123;
 }
 .icon_star_top {
     font-size: 6dvw;
@@ -51,12 +78,19 @@ h1 {
     font-size: 5dvw;
 }
 
-.navbar-toggler {
-    border: none !important;
+.fs-md-10 {
+    font-size: 4.5dvw;
 }
+.fs-10 {
+    font-size: 10dvw;
+}
+.star-hover {
+    visibility: hidden;
+} */
+
 
 /*Tablet styles*/
-
+/* 
 @media (min-width: 768px) {
     .icon_aside {
         font-size: 4dvw;
@@ -81,10 +115,16 @@ h1 {
         margin-left: 3dvw;
         margin-top: 3dvw;
     }
-}
+    .opacity-md-100 {
+        opacity: 100% !important;
+    }
+    .ms-10 {
+        margin-left: 8.2dvw;
+    }
+} */
 
 /*Desktop styles*/
-
+/* 
 @media (min-width: 992px) {
     .icon_page {
         font-size: 4dvw;
@@ -106,4 +146,37 @@ h1 {
         font-size: 3.5dvw;
         color: #FFFFFF;
     } 
-}
+    .main_img:hover {
+        filter: opacity(0.5);
+    }
+    .icon_page:hover {
+        color: #FF0F7B;
+        transition-duration: 0.5s;
+    }
+    .icon_page:active {
+        color: #000123;
+        font-size: 3.8dvw;
+    }
+
+
+
+    .card-img-top:hover {
+        -webkit-transform:scale(1.1);
+        transform:scale(1.1);
+        filter: opacity(0.3);
+    }
+    .card-img-top {
+        overflow:hidden;
+    }
+    .star-hover {
+        display: none;
+    }
+    .star-hover:hover {
+        display: block;
+        position: absolute;
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+    }
+
+} */
