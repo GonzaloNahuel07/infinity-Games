@@ -55,7 +55,7 @@ h1 {
 /*About Us Arrow Animation*/
 
 .arrow {
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: slidein;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -63,7 +63,7 @@ h1 {
   
   @keyframes slidein {
     from {
-      margin-top: 40%;
+      margin-top: 20%;
     }
   }
 
@@ -72,7 +72,7 @@ h1 {
 
 .arrowCards {
     height: 60px;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
     animation-name: slidein2;
     animation-iteration-count: infinite;
     animation-direction: alternate;
