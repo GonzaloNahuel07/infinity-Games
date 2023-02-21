@@ -47,8 +47,8 @@
                     <div class="headerTitle d-flex flex-row align-items-center">
                         <div class="userButtons d-flex align-items-center">
                             <i class="bi bi-person-fill mx-1 fs-3 d-flex"></i>
-                            <a href="#" class="text-decoration-none text-light mx-2 d-none d-md-flex">Iniciar Sesion</a>
-                            <button class="btn-light px-4 d-none d-md-flex">Registrarse</button>
+                            <a href="#" class="text-decoration-none text-light mx-2 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
+                            <button class="btn-light text-light bg-pink px-4 d-none d-md-flex">Registrarse</button>
                         </div>
                     </div>
                 </div>
@@ -56,39 +56,39 @@
         </header>
         <!-- MAIN -->
         <main class="row main gray">
-            <div class="container row d-flex flex-column mt-5 mx-auto p-4 align-items-center justify-content-center">
-                <div class="imgBackground d-flex flex-column p-3 align-items-center justify-content-center">
+            <div class="container row d-flex flex-column flex-lg-row mt-5 mx-auto p-4 align-items-center justify-content-center">
+                <div class="imgBackground col-lg-6 d-flex flex-column flex-lg-row p-3 align-items-center justify-content-center">
                     <img 
-                        class="img-fluid position-relative"
+                        class="img-fluid position-relative rounded"
                         src="../images/background/background-setup.png" 
                         alt="background-setup">
                     <button class="px-4 register-btn bg-pink d-md-none text-light position-absolute">Registrarse</button>
                 </div>
-                <div class="form d-flex flex-column p-4">
+                <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
                     <div class="loginTitle text-light text-center">
-                        <h1>INICIAR SESION</h1>
+                        <h1 class="fs-3">INICIAR SESION</h1>
                     </div>
-                    <div class="email">
+                    <div class="email mb-3">
                         <input
-                            class="text-center text-light border-pink bg-input"
+                            class="text-center text-lg-start text-light border-pink bg-input"
                             type="email" 
                             name="userEmail" 
                             id="userEmail" 
                             placeholder="Correo electronico">
                     </div>
-                    <div class="password">
+                    <div class="password mb-3">
                         <input 
-                            class="text-center text-light border-pink bg-input"
+                            class="text-center text-lg-start text-light border-pink bg-input"
                             type="password" 
                             name="userPasword" 
                             id="userPasword"
                             placeholder="Contraseña">
                     </div>
-                    <div class="button">
+                    <div class="button mb-3">
                         <button class="btn btn-light">Ingresar</button>
                     </div>
-                    <div class="forgotPassword">
-                        <a href="#" class="text-light text-decoration-none">He olvidado mi contraseña</a>
+                    <div class="forgotPassword justify-content-center align-items-center mb-3">
+                        <a href="#" class="text-light text-center text-decoration-none">He olvidado mi contraseña</a>
                     </div>
                     <div class="mediaLogin">
                         <span class="text-light">INICIAR SESION CON:</span>
@@ -102,8 +102,8 @@
         <footer class="row bg-primary">
             <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
                 <div class="footer_title justify-content-center align-items-center d-flex flex-column">
-                    <h1 class="text-white mb-5 fs-md-1 ">Infinity games</h1>
-                    <a class="text-white mb-5 fs-2 text-decoration-none my-2" href="#">CONTACTO</a>
+                    <h1 class="text-white mb-5 fs-md-1 fs-2">Infinity games</h1>
+                    <a class="text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
                 </div>
                 <div class="media flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
                     <a class="bi bi-twitter text-white fs-1" href="#"></a>
