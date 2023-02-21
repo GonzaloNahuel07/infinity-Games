@@ -1,15 +1,15 @@
 body {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
+    background-color: #000123;
 }
 h1 {
     font-size: 5dvw;
 }
 
-.main {
-    margin-top: 5dvw;
+.mt-10 {
+    margin-top: 12dvw;
 }
-
 
 /*      Colors     */
 
@@ -25,9 +25,16 @@ h1 {
 .text-pink {
     color: #FF0F7B;
 }
+.bg-pink {
+    background-color: #FF0F7B;
+}
 .icon_page {
     font-size: 8dvw;
     color: #FFFFFF;
+}
+.icon_page:active {
+    font-size: 7.8dvw;
+    color: #000123;
 }
 .icon_star_top {
     font-size: 6dvw;
@@ -54,6 +61,7 @@ h1 {
 .star-hover {
     visibility: hidden;
 }
+
 
 /*Tablet styles*/
 
@@ -84,7 +92,9 @@ h1 {
     .opacity-md-100 {
         opacity: 100% !important;
     }
-
+    .ms-10 {
+        margin-left: 8.2dvw;
+    }
 }
 
 /*Desktop styles*/
@@ -110,6 +120,20 @@ h1 {
         font-size: 3.5dvw;
         color: #FFFFFF;
     } 
+    .main_img:hover {
+        filter: opacity(0.5);
+    }
+    .icon_page:hover {
+        color: #FF0F7B;
+        transition-duration: 0.5s;
+    }
+    .icon_page:active {
+        color: #000123;
+        font-size: 3.8dvw;
+    }
+
+
+
     .card-img-top:hover {
         -webkit-transform:scale(1.1);
         transform:scale(1.1);
