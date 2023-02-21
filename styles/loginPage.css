@@ -1,0 +1,13 @@
+.register-btn {
+    margin-top: 40%;
+}
+.bg-pink{
+    background-color: #FF0F7B;
+}
+.border-pink{
+    border:solid 1px #FF0F7B;
+    border-radius: .25rem;
+}
+.bg-input{
+    background-color: #383b84;
+}
