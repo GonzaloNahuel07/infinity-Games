@@ -7,6 +7,9 @@
 .bg-pink{
     background-color: #FF0F7B;
 }
+.bg-gray{
+    background-color: #272727;
+}
 .border-pink{
     border:solid 1px #FF0F7B;
     border-radius: .25rem;
