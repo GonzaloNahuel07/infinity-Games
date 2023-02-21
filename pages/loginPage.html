@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/storeUser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <title>Tienda de Infinity Games</title>
+</head>
+<body class="container-fluid">
+    <!-- HEADER -->
+        <header class="row fixed-top justify-content-between">
+            <!-- NAVBAR -->
+            <nav class="navbar fixed-top">
+                <!-- MENU -->
+                <div class="container-fluid opacity-75">
+                    <button class="navbar-toggler fs-1 mx-2 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start">
+                                <div class="p-md-4 d-flex flex-column">
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">TIENDA</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">BIBLIOTECA</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">ACERCA DE NOSOTROS</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="headerTitle d-flex flex-row justify-content-center">    
+                        <div class="header-title">
+                            <h1 class="title text-white fs-3 d-none d-md-flex">INFINITY GAMES</h1>
+                        </div>
+                        <div class="userIcon align-self-end">
+                            <a href="#" class="bi bi-person-fill text-white mx-2 self-end"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- MAIN -->
+        <main class="row main">
+            <div class="container row d-flex flex-row mt-5 p-4">
+                <div class="img d-none">
+                    <img src="../images/background/background-setup.png" alt="">
+                </div>
+                <div class="loginTitle">
+                    <h1>INICIAR SESION</h1>
+                </div>
+                <div class="email">
+                    <input 
+                        type="email" 
+                        name="userEmail" 
+                        id="userEmail" 
+                        placeholder="Correo electronico">
+                </div>
+                <div class="password">
+                    <input 
+                        type="password" 
+                        name="userPasword" 
+                        id="userPasword"
+                        placeholder="Contraseña">
+                </div>
+                <div class="button">
+                    <button class="btn btn-primary">Ingresar</button>
+                </div>
+                <div class="forgotPassword">
+                    <a href="#" class="text-dark text-decoration-none">He olvidado mi contraseña</a>
+                </div>
+                <div class="mediaLogin">
+                    <span class="text-dark">INICIAR SESION CON:</span>
+                    
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="row bg-primary">
+            <div class="footer p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
+                <div class="footer_title justify-content-center align-items-center d-flex flex-column">
+                    <h1 class="text-white mb-5 fs-md-1 ">Infinity games</h1>
+                    <a class="text-white mb-5 fs-2 text-decoration-none my-2" href="#">CONTACTO</a>
+                </div>
+                <div class="media flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
+                    <a class="bi bi-twitter text-white fs-1" href="#"></a>
+                    <a class="bi bi-facebook text-white fs-1" href="#"></a>
+                    <a class="bi bi-youtube text-white fs-1" href="#"></a>
+                    <a class="bi bi-instagram text-white fs-1" href="#"></a>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
