@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-orbiton);
+}
+
 body {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
@@ -13,13 +20,13 @@ h1 {
 /*      Colors     */
 
 .blue, .footer, .navbar, .offcanvas {
-    background-color: #000123 ;
+    background-color: #000123 !important;
 }
 .white {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF !important;
 }
 .gray {
-    background-color: #272727;
+    background-color: #272727 !important;
 }
 .text-pink {
     color: #FF0F7B;
@@ -44,6 +51,9 @@ h1 {
     font-size: 5dvw;
 }
 
+.navbar-toggler {
+    border: none !important;
+}
 
 /*Tablet styles*/
 
