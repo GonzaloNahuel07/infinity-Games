@@ -22,14 +22,16 @@
                 <!-- MENU -->
                 <div class="container-fluid opacity-75 d-flex">
                     <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="burguer bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
                     </button>
                     <div class="offcanvas blue offcanvas-start w-md-75 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
-                            <button type="button" class="btn-close white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
+                        <div class="offcanvas-body d-flex">
                             <ul class="navbar-nav justify-content-start">
                                 <div class="p-md-4 d-flex flex-column">
                                     <a class="mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
@@ -48,14 +50,75 @@
                         <div class="userButtons d-flex align-items-center">
                             <i class="bi bi-person-fill mx-1 fs-3 d-flex"></i>
                             <a href="#" class="text-decoration-none text-light mx-2 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
-                            <button class="btn-light text-light bg-pink px-4 d-none d-md-flex">Registrarse</button>
                             <div class="modalRegister">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn-light text-light bg-pink px-4 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Registrarse
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
         </header>
+        <!-- Modal -->
+        <div class="modal fade border-pink" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header blue border-pink">
+                <h1 class="modal-title fs-5 text-center text-light" id="exampleModalLabel">REGISTRARSE</h1>
+                <button type="button" class="btn-close bg-pink" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body blue border-pink">
+                <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
+                        <div class="newUserName mb-3 d-flex justify-content-center align-items-center">
+                            <input
+                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="text" 
+                                name="newUserName" 
+                                id="newUserName" 
+                                placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="newUserNickname mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="text" 
+                                name="userNickName" 
+                                id="newUserNickName"
+                                placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="newUserEmail mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="email" 
+                                name="newUserEmail" 
+                                id="newUserEmail"
+                                placeholder="Correo electronico">
+                        </div>
+                        <div class="newUserPassword mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="password" 
+                                name="newUserPasword" 
+                                id="newUserPasword"
+                                placeholder="Contraseña">
+                        </div>
+                        <div class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="password" 
+                                name="newUserPaswordConfirm" 
+                                id="newUserPaswordConfirm"
+                                placeholder="Repetir contraseña">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer blue border-pink">
+                <button type="button" class="btn btn-light">Registrarse</button>
+                </div>
+            </div>
+            </div>
+        </div>
         <!-- MAIN -->
         <main class="row main gray">
             <div class="container row d-flex flex-column flex-lg-row mt-5 mx-auto p-4 align-items-center justify-content-center">
@@ -64,7 +127,10 @@
                         class="img-fluid position-relative rounded"
                         src="../images/background/background-setup.png" 
                         alt="background-setup">
-                    <button class="px-4 register-btn bg-pink d-md-none text-light position-absolute">Registrarse</button>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="position-absolute register-btn btn-light text-light bg-pink px-4 d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Registrarse
+                                </button>
                 </div>
                 <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
                     <div class="loginTitle text-light text-center">

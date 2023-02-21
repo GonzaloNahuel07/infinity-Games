@@ -1,3 +1,6 @@
+::placeholder{
+    color: white;
+}
 .register-btn {
     margin-top: 40%;
 }
@@ -13,4 +16,14 @@
 }
 .color-white{
     color: white !important;
+}
+.burguer{
+    width: 50px;
+    height: 50px;
+}
+
+@media (min-width: 992px){
+    .input-width{
+        width: 25rem !important;
+    }
 }
