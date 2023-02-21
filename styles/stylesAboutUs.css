@@ -6,9 +6,13 @@ h1 {
     font-size: 5dvw;
 }
 
+.main {
+    margin-top: 5dvw;
+}
+
 /*      Colors     */
 
-.blue {
+.blue, .footer, .navbar, .offcanvas {
     background-color: #000123 ;
 }
 .white {
@@ -31,9 +35,15 @@ h1 {
     font-size: 5dvw;
 }
 
-.border-color-pink {
-    border-color: #FF0F7B;
+.bi-person-fill {
+    font-size: 8dvw;
+    color: #FFFFFF;
+} 
+
+.card-title {
+    font-size: 5dvw;
 }
+
 
 /*About Us Main*/
 

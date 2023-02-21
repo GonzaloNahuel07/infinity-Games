@@ -44,6 +44,16 @@ h1 {
     font-size: 5dvw;
 }
 
+/*About Us Main*/
+
+.aboutUsBackground {
+    background-image: url(../images/background-mouse.png);
+    background-position: center;
+    background-size: cover;
+    height: 1000px;
+}
+
+
 
 /*Tablet styles*/
 

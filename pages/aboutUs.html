@@ -14,9 +14,40 @@
 
         <!-- Start Navbar -->
 
-        <header class="row fixed-top">
-            <div class="blue col-12">navbar</div>
-        </header>
+        <header class="row fixed-top justify-content-between">
+          <!-- NAVBAR -->
+          <nav class="navbar fixed-top">
+              <!-- MENU -->
+              <div class="container-fluid opacity-75">
+                  <button class="navbar-toggler fs-1 mx-2 border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list text-light border border-0" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                  </button>
+                  <div class="offcanvas offcanvas-start w-75 blue" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header blue">
+                          <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
+                          <button style="background-color: red;" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body blue">
+                          <ul class="navbar-nav justify-content-start">
+                              <div class="p-md-4 d-flex flex-column">
+                                  <a class="mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
+                                  <a class="mt-2 text-white text-decoration-none fs-5" href="#">TIENDA</a>
+                                  <a class="mt-2 text-white text-decoration-none fs-5" href="#">BIBLIOTECA</a>
+                                  <a class="mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                  <a class="mt-2 text-white text-decoration-none fs-5" href="#">ACERCA DE NOSOTROS</a>
+                              </div>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="header-title">
+                      <h1 class="title text-white fs-3 d-none d-md-block">INFINITY GAMES</h1>
+                  </div>
+                  <i class="bi bi-person-fill text-white mx-2"></i>
+              </div>
+          </nav>
+      </header>
 
         <!-- Finish Navbar -->
 
