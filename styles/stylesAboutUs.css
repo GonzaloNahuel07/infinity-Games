@@ -21,6 +21,9 @@ h1 {
 .gray {
     background-color: #272727;
 }
+.bg-pink {
+    background-color: #FF0F7B !important;
+}
 .text-pink {
     color: #FF0F7B;
 }
@@ -46,6 +49,10 @@ h1 {
 
 
 /*About Us Main*/
+
+.navbar-active-color {
+    color:#FF0F7B !important
+}
 
 .aboutUsBackground {
     background-image: url(../images/background-mouse.png);
