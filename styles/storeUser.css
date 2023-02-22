@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-/* body {
+body {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
     background-color: #000123;
@@ -24,9 +24,9 @@ h1 {
 
 .mt-10 {
     margin-top: 12dvw;
-
+}
 /*      Colors     */
-/* 
+
 .blue, .footer, .navbar, .offcanvas {
     background-color: #000123 ;
 }
@@ -78,12 +78,11 @@ h1 {
 .card-img-top {
     box-shadow: 0px 0px 15px 5px #ff0f7b2e;
 }
-    visibility: hidden;
-} */
+    
 
 
 /*Tablet styles*/
-/* 
+
 @media (min-width: 768px) {
     .icon_aside {
         font-size: 4dvw;
@@ -111,16 +110,13 @@ h1 {
     .opacity-md-100 {
         opacity: 100% !important;
     }
-    .ms-10 {
-      margin-left: 8.1dvw;
+    .ms-10 { 
+        margin-left: 8.1dvw;
     }
-}
-        margin-left: 8.2dvw;
-    }
-} */
+} 
 
 /*Desktop styles*/
-/* 
+
 @media (min-width: 992px) {
     .icon_page {
         font-size: 4dvw;
@@ -167,14 +163,6 @@ h1 {
         opacity: 1;  
         background-color: #272727ab;
     }
-
-
-
-
-}
-
-
-
     .card-img-top:hover {
         -webkit-transform:scale(1.1);
         transform:scale(1.1);
@@ -194,4 +182,4 @@ h1 {
         height: 100%;
     }
 
-} */
+} 
