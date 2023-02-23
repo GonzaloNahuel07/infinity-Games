@@ -215,3 +215,47 @@ body {
         background-position: 400%;
     }
 }
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.media-icon--twitter:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #00FFFF, #fff, #00FFFF);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--facebook:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #0052f6, #fff, #0052f6);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--youtube:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #ff0000, #fff, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--instagram:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #ff8529, #feda77, #dd2a7b, #8134af, #515bd4, #ff8529);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
