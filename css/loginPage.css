@@ -43,7 +43,10 @@ body {
         width: 25rem !important;
     }
     .offcanvas-start{
-        width: 91% !important;
+        width: 30% !important;
+    }
+    .burger-bg{
+        opacity: 100% !important;
     }
 }
 /*      Colors     */
