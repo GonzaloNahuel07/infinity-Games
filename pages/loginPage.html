@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/loginPage.css">
-    <title>Tienda de Infinity Games</title>
+    <title>Infinity Games</title>
 </head>
 <body class="container-fluid bg-gray">
     <!-- HEADER -->
         <header class="row fixed-top justify-content-between">
             <!-- NAVBAR -->
-            <nav class="navbar blue fixed-top">
+            <nav class="navbar blue fixed-top w-100">
                 <!-- MENU -->
                 <div class="container-fluid opacity-75 d-flex">
                     <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -26,33 +26,33 @@
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                         </svg>
                     </button>
-                    <div class="offcanvas blue offcanvas-start w-md-75 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas blue offcanvas-start w-100 fs-1" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
+                            <h5 class="offcanvas-title text-white page-title" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
                             <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body d-flex">
-                            <ul class="navbar-nav justify-content-start">
+                            <ul class="navbar-nav justify-content-start d-flex flex-row">
                                 <div class="p-md-4 d-flex flex-column">
-                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
-                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">TIENDA</a>
-                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">BIBLIOTECA</a>
-                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
-                                    <a class="mt-2 text-white text-decoration-none fs-5" href="#">ACERCA DE NOSOTROS</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">INICIO</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="storeUser.html">TIENDA</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">BIBLIOTECA</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">ACERCA DE NOSOTROS</a>
                                 </div>
                             </ul>
                         </div>
                     </div>    
-                    <div class="header-title d-flex justify-content-between">
-                        <h1 class="title text-white fs-3 d-none d-md-flex mx-auto">INFINITY GAMES</h1>
+                    <div class="header-title d-flex">
+                        <h1 class="title text-white fs-3 d-none d-md-flex mx-auto page-title title-hover">INFINITY GAMES</h1>
                     </div>
-                    <div class="headerTitle d-flex flex-row align-items-center">
+                    <div class="headerTitle d-flex flex-row align-items-center px-3">
                         <div class="userButtons d-flex align-items-center">
                             <i class="bi bi-person-fill mx-1 fs-3 d-flex"></i>
-                            <a href="#" class="text-decoration-none text-light mx-2 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
+                            <a href="#" class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
                             <div class="modalRegister">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn-light text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Registrarse
                                 </button>
                             </div>
@@ -73,7 +73,7 @@
                 <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
                         <div class="newUserName mb-3 d-flex justify-content-center align-items-center">
                             <input
-                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
                                 type="text" 
                                 name="newUserName" 
                                 id="newUserName" 
@@ -81,7 +81,7 @@
                         </div>
                         <div class="newUserNickname mb-3 d-flex justify-content-center align-items-center">
                             <input 
-                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
                                 type="text" 
                                 name="userNickName" 
                                 id="newUserNickName"
@@ -89,7 +89,7 @@
                         </div>
                         <div class="newUserEmail mb-3 d-flex justify-content-center align-items-center">
                             <input 
-                                class="input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                                class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
                                 type="email" 
                                 name="newUserEmail" 
                                 id="newUserEmail"
@@ -97,7 +97,7 @@
                         </div>
                         <div class="newUserPassword mb-3 d-flex justify-content-center align-items-center">
                             <input 
-                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
                                 type="password" 
                                 name="newUserPasword" 
                                 id="newUserPasword"
@@ -105,7 +105,7 @@
                         </div>
                         <div class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center">
                             <input 
-                                class="input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
                                 type="password" 
                                 name="newUserPaswordConfirm" 
                                 id="newUserPaswordConfirm"
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="modal-footer blue border-pink">
-                <button type="button" class="btn btn-light">Registrarse</button>
+                <button type="button" class="btn btn-light text-dark btn-hover-2">Registrarse</button>
                 </div>
             </div>
             </div>
@@ -128,7 +128,7 @@
                         src="../images/background/background-setup.png" 
                         alt="background-setup">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="position-absolute register-btn btn-light text-light bg-pink px-4 d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button type="button" class="position-absolute btn-hover register-btn btn-light text-light bg-pink px-4 d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Registrarse
                                 </button>
                 </div>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="email mb-3">
                         <input
-                            class="text-center text-lg-start text-light border-pink bg-input"
+                            class="text-center placeholder-hover text-lg-start text-light border-pink bg-input"
                             type="email" 
                             name="userEmail" 
                             id="userEmail" 
@@ -146,22 +146,22 @@
                     </div>
                     <div class="password mb-3">
                         <input 
-                            class="text-center text-lg-start text-light border-pink bg-input"
+                            class="text-center placeholder-hover text-lg-start text-light border-pink bg-input"
                             type="password" 
                             name="userPasword" 
                             id="userPasword"
                             placeholder="Contraseña">
                     </div>
                     <div class="button mb-3">
-                        <button class="btn btn-light">Ingresar</button>
+                        <button class="btn btn-light text-dark btn-hover-2">Ingresar</button>
                     </div>
                     <div class="forgotPassword justify-content-center align-items-center mb-3">
-                        <a href="#" class="text-light text-center text-decoration-none">He olvidado mi contraseña</a>
+                        <a href="#" class="link-hover-2 text-light text-center text-decoration-none">He olvidado mi contraseña</a>
                     </div>
                     <div class="mediaLogin">
                         <span class="text-light">INICIAR SESION CON:</span>
-                        <a href="#" class="bi bi-facebook"></a>
-                        <a href="#" class="bi bi-google"></a>
+                        <a href="#" class="bi bi-facebook fs-1 mx-2"></a>
+                        <a href="#" class="bi bi-google fs-1"></a>
                     </div>
                 </div>
             </div>
@@ -170,8 +170,8 @@
         <footer class="row bg-primary">
             <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
                 <div class="footer_title justify-content-center align-items-center d-flex flex-column">
-                    <h1 class="text-white mb-5 fs-md-1 fs-2">Infinity games</h1>
-                    <a class="text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
+                    <h1 class="text-white mb-5 fs-md-1 fs-2 page-title">INFINITY GAMES</h1>
+                    <a class="link-hover text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
                 </div>
                 <div class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
                     <a class="bi bi-twitter text-white fs-1" href="#"></a>
