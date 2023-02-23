@@ -1,0 +1,214 @@
+::placeholder{
+    color: white;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    background-color: #000123;
+}
+.register-btn {
+    margin-top: 40%;
+}
+.bg-pink{
+    background-color: #FF0F7B;
+}
+.bg-gray{
+    background-color: #272727;
+}
+.border-pink{
+    border:solid 1px #FF0F7B;
+    border-radius: .25rem;
+}
+.pink{
+    color: #FF0F7B;
+}
+.bg-input{
+    background-color: #383b84;
+}
+.color-white{
+    color: white !important;
+}
+.burguer{
+    width: 50px;
+    height: 50px;
+}
+@media (min-width: 768px){
+    .offcanvas-start{
+        width: 91% !important;
+    }
+}
+
+@media (min-width: 992px){
+    .input-width{
+        width: 25rem !important;
+    }
+    .offcanvas-start{
+        width: 91% !important;
+    }
+}
+/*      Colors     */
+
+.blue {
+    background-color: #000123 ;
+}
+.white {
+    background-color: #FFFFFF;
+}
+.gray {
+    background-color: #272727;
+}
+.text-pink {
+    color: #FF0F7B;
+}
+.bg-pink {
+    background-color: #FF0F7B;
+}
+/* animations */    
+.btn-hover{
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.btn-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.btn-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.btn-hover:hover{
+    background: #272727;
+}
+.btn-hover-2{
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.btn-hover-2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.btn-hover-2:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.btn-hover-2:hover{
+    background: #FF0F7B;
+    border: black solid 1px;
+}
+.placeholder-hover{
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.placeholder-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.placeholder-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.placeholder-hover:hover{
+    background: #FF0F7B;
+    border: black solid 1px;
+    padding: 2%;
+}
+.link-hover{
+    padding: 3%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.link-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.link-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.page-title{
+    user-select: none;
+}
+.title-hover{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(45deg, #383b84, #272727, #FF0F7B, #00FFFF, #fff, rgba(128, 128, 128, 0.493));
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}

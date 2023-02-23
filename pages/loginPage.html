@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/loginPage.css">
+    <title>Infinity Games</title>
+</head>
+<body class="container-fluid bg-gray">
+    <!-- HEADER -->
+        <header class="row fixed-top justify-content-between">
+            <!-- NAVBAR -->
+            <nav class="navbar blue fixed-top w-100">
+                <!-- MENU -->
+                <div class="container-fluid opacity-75 d-flex">
+                    <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="burguer bi bi-list text-light" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                    <div class="offcanvas blue offcanvas-start w-100 fs-1" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white page-title" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
+                            <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex">
+                            <ul class="navbar-nav justify-content-start d-flex flex-row">
+                                <div class="p-md-4 d-flex flex-column">
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="../index.html">INICIO</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="storeUser.html">TIENDA</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./storeUser.html">BIBLIOTECA</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./aboutUs.html">ACERCA DE NOSOTROS</a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>    
+                    <div class="header-title d-flex">
+                        <h1 class="title text-white fs-3 d-none d-md-flex mx-auto page-title title-hover">INFINITY GAMES</h1>
+                    </div>
+                    <div class="headerTitle d-flex flex-row align-items-center px-3">
+                        <div class="userButtons d-flex align-items-center">
+                            <i class="bi bi-person-fill mx-1 fs-3 d-flex"></i>
+                            <a href="#" class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
+                            <div class="modalRegister">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Registrarse
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade border-pink" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header blue border-pink">
+                <h1 class="modal-title fs-5 text-center text-light" id="exampleModalLabel">REGISTRARSE</h1>
+                <button type="button" class="btn-close bg-pink" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body blue border-pink">
+                <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
+                        <div class="newUserName mb-3 d-flex justify-content-center align-items-center">
+                            <input
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="text" 
+                                name="newUserName" 
+                                id="newUserName" 
+                                placeholder="Nombre y Apellido">
+                        </div>
+                        <div class="newUserNickname mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="text" 
+                                name="userNickName" 
+                                id="newUserNickName"
+                                placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="newUserEmail mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="email" 
+                                name="newUserEmail" 
+                                id="newUserEmail"
+                                placeholder="Correo electronico">
+                        </div>
+                        <div class="newUserPassword mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="password" 
+                                name="newUserPasword" 
+                                id="newUserPasword"
+                                placeholder="Contraseña">
+                        </div>
+                        <div class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center">
+                            <input 
+                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                                type="password" 
+                                name="newUserPaswordConfirm" 
+                                id="newUserPaswordConfirm"
+                                placeholder="Repetir contraseña">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer blue border-pink">
+                <button type="button" class="btn btn-light text-dark btn-hover-2">Registrarse</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- MAIN -->
+        <main class="row main gray mb-5 mt-5">
+            <div class="container row d-flex flex-column flex-lg-row mt-5 mx-auto p-4 align-items-center justify-content-center">
+                <div class="imgBackground col-lg-6 d-flex flex-column flex-lg-row p-3 align-items-center justify-content-center">
+                    <img 
+                        class="img-fluid position-relative rounded"
+                        src="../images/background/background-setup.png" 
+                        alt="background-setup">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="position-absolute btn-hover register-btn btn-light text-light bg-pink px-4 d-flex d-md-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Registrarse
+                                </button>
+                </div>
+                <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
+                    <div class="loginTitle text-light text-center">
+                        <h1 class="fs-3">INICIAR SESION</h1>
+                    </div>
+                    <div class="email mb-3">
+                        <input
+                            class="text-center placeholder-hover text-lg-start text-light border-pink bg-input"
+                            type="email" 
+                            name="userEmail" 
+                            id="userEmail" 
+                            placeholder="Correo electronico">
+                    </div>
+                    <div class="password mb-3">
+                        <input 
+                            class="text-center placeholder-hover text-lg-start text-light border-pink bg-input"
+                            type="password" 
+                            name="userPasword" 
+                            id="userPasword"
+                            placeholder="Contraseña">
+                    </div>
+                    <div class="button mb-3">
+                        <button class="btn btn-light text-dark btn-hover-2">Ingresar</button>
+                    </div>
+                    <div class="forgotPassword justify-content-center align-items-center mb-3">
+                        <a href="#" class="link-hover-2 text-light text-center text-decoration-none">He olvidado mi contraseña</a>
+                    </div>
+                    <div class="mediaLogin">
+                        <span class="text-light">INICIAR SESION CON:</span>
+                        <a href="#" class="bi bi-facebook fs-1 mx-2"></a>
+                        <a href="#" class="bi bi-google fs-1"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer class="row blue">
+            <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
+                <div class="footer_title justify-content-center align-items-center d-flex flex-column">
+                    <h1 class="text-white mb-5 fs-md-1 fs-2 page-title">INFINITY GAMES</h1>
+                    <a class="link-hover text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
+                </div>
+                <div class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
+                    <a class="bi bi-twitter text-white fs-1" href="#"></a>
+                    <a class="bi bi-facebook text-white fs-1" href="#"></a>
+                    <a class="bi bi-youtube text-white fs-1" href="#"></a>
+                    <a class="bi bi-instagram text-white fs-1" href="#"></a>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../js/loginPages_animations.js"></script>
+</body>
+</html>
