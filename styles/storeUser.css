@@ -163,3 +163,120 @@ h1 {
     }
 
 } 
+/*---ANIMATIONS NAVBAR Y FOOTER---*/
+.btn-hover{
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+.btn-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+.btn-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.btn-hover:hover{
+    background: #272727;
+}
+.link-hover{
+    padding: 3%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.link-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.link-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.page-title{
+    user-select: none;
+}
+.title-hover{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(45deg, #383b84, #272727, #FF0F7B, #00FFFF, #fff, rgba(128, 128, 128, 0.493));
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
+.media-icon--twitter:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #00FFFF, #fff, #00FFFF);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--facebook:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #0052f6, #fff, #0052f6);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--youtube:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #ff0000, #fff, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
+.media-icon--instagram:hover {
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(90deg, #ff8529, #feda77, #dd2a7b, #8134af, #515bd4, #ff8529);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+}
