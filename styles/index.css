@@ -14,8 +14,13 @@
     font-family: var(--font-orbiton);
 }
 
+body {
+    background-color: var(--dark-blue) !important;
+}
+
 .carousel {
     width: 100% !important;
+    margin-top: 60px;
 }
 
 .main {
@@ -52,9 +57,10 @@ button.active {
 }
 
 .main-ratings {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 25px;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -88,6 +94,15 @@ button.active {
 }
 
 @media (min-width: 768px) {
+    .main-ratings {
+        margin-top: 60px;
+        margin-bottom: 150px;
+    }
+
+    .carousel {
+        margin-top: 70px;
+    }
+
     .container-cards {
         display: flex;
         flex-direction: row;
@@ -112,6 +127,11 @@ button.active {
 }  
 
 @media (min-width: 1024px) {
+    .main-ratings {
+        margin-top: 60px;
+        margin-bottom: 150px;
+    }
+
     .container-cards {
         display: flex;
         flex-direction: row;
@@ -139,6 +159,11 @@ button.active {
 }
 
 @media (min-width: 1440px) {
+    .main-ratings {
+        margin-top: 60px;
+        margin-bottom: 150px;
+    }
+    
     .container-cards {
         display: flex;
         flex-direction: row;
