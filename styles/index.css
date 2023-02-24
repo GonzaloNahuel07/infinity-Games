@@ -149,6 +149,7 @@ button.active {
 
     .card-image{
         width: 400px;
+        cursor: pointer;
     }
 
     .card-image:hover {
