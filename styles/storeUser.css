@@ -104,11 +104,41 @@ h1 {
     .ms-10 { 
         margin-left: 8.1dvw;
     }
-} 
-
+    .container-icon_aside {
+        margin-left: 1.1dvw;
+    }
+    .aside {
+        width: 7dvw;
+        background-color: #000123;
+        overflow: hidden;
+        -webkit-transition:width .2s linear;
+        transition: width .2s linear;
+    }
+    .aside:hover {
+        width: 47dvw;
+        border-bottom-right-radius: 20px;
+    }
+    .container-icon_aside a {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: #fff;
+    }
+    .icon_aside:hover {
+        color: #FF0F7B !important;
+        transition: 1s;
+    }
+}
 /*Desktop styles*/
 
 @media (min-width: 992px) {
+    .aside {
+        width: 7.5dvw;
+    }
+    .aside:hover {
+        width: 40dvw;
+    }
     .icon_page {
         font-size: 4dvw;
     }
@@ -163,6 +193,11 @@ h1 {
     }
 
 } 
+@media (min-width: 1440px) {
+    .aside:hover {
+        width: 28dvw;
+    }
+}
 /*---ANIMATIONS NAVBAR Y FOOTER---*/
 .btn-hover{
     position: relative;
@@ -280,9 +315,3 @@ h1 {
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
 }
-.aside:hover {
-    width: 400px !important;
-    background-color: #000123;
-    border-radius: 10px;
-}
-
