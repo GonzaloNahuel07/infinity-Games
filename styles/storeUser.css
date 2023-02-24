@@ -280,3 +280,9 @@ h1 {
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
 }
+.aside:hover {
+    width: 400px !important;
+    background-color: #000123;
+    border-radius: 10px;
+}
+
