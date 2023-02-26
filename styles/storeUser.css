@@ -16,7 +16,7 @@ h1 {
 .mt-10 {
     margin-top: 12dvw;
 }
-/*      Colors     */
+/*--------Colors--------*/
 
 .blue, .footer, .navbar, .offcanvas {
     background-color: #000123 ;
@@ -57,148 +57,35 @@ h1 {
     font-size: 5dvw;
 }
 
-.fs-md-10 {
-    font-size: 4.5dvw;
+.card_pencil-lg {
+    display: none;
 }
-.fs-10 {
-    font-size: 10dvw;
+.card_pencil {
+    font-size: 30dvw;
+    position: absolute;
+    color: #FF0F7B;
+    z-index: 2;
+}
+.card_pencil:active {
+    font-size: 37dvw;
 }
 .star-hover {
   display: none;
 }
 .card-img-top {
-    box-shadow: 0px 0px 15px 5px #ff0f7b2e;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 10px #ff0f7b2e;
 }
-    
-
-
-/*Tablet styles*/
-
-@media (min-width: 768px) {
-    .icon_aside {
-        font-size: 4dvw;
-    }
-    .icon_star_top {
-        font-size: 5dvw;
-    }
-    .card-title {
-        font-size: 3dvw;
-    }
-    .icon_star {
-        font-size: 3dvw;
-    }
-    .bi-person-fill {
-        font-size: 3.5dvw;
-        color: #FFFFFF;
-    } 
-    .offcanvas-start {
-        margin-left: 8.3dvw;
-    }
-    .offcanvas-title {
-        margin-left: 3dvw;
-        margin-top: 3dvw;
-    }
-    .opacity-md-100 {
-        opacity: 100% !important;
-    }
-    .ms-10 { 
-        margin-left: 8.1dvw;
-    }
-    .container-icon_aside {
-        margin-left: 1.1dvw;
-    }
-    .aside {
-        width: 7dvw;
-        background-color: #000123;
-        overflow: hidden;
-        -webkit-transition:width .2s linear;
-        transition: width .2s linear;
-    }
-    .aside:hover {
-        width: 47dvw;
-        border-bottom-right-radius: 20px;
-    }
-    .container-icon_aside a {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        text-decoration: none;
-        color: #fff;
-    }
-    .icon_aside:hover {
-        color: #FF0F7B !important;
-        transition: 1s;
-    }
+.card-img-top:active {
+    transform: scale(1.1);
 }
-/*Desktop styles*/
-
-@media (min-width: 992px) {
-    .aside {
-        width: 7.5dvw;
-    }
-    .aside:hover {
-        width: 40dvw;
-    }
-    .icon_page {
-        font-size: 4dvw;
-    }
-    h1 {
-        font-size: 4dvw;
-    }
-    .card-title {
-        font-size: 2dvw;
-    }
-    .offcanvas-start {
-        margin-left: 8.3dvw;
-    }
-    .offcanvas-title {
-        margin-left: 3dvw;
-        margin-top: 3dvw;
-    }
-    .bi-person-fill {
-        font-size: 3.5dvw;
-        color: #FFFFFF;
-    } 
-    .main_img:hover {
-        filter: opacity(0.5);
-    }
-    .icon_page:hover {
-        color: #FF0F7B;
-        transition-duration: 0.5s;
-    }
-    .icon_page:active {
-        color: #000123;
-        font-size: 3.8dvw;
-    }
-    .star-hover {
-        opacity: 0;
-        position: absolute;
-        display: flex;
-        width: 100%;
-        height: 13dvw;
-        justify-content: center;
-        align-items: center;
-    }
-    .card-img-top {
-        overflow:hidden;
-    }
-    .star-hover:hover {
-        display: flex;
-        position: absolute;
-        visibility: visible;
-        opacity: 1;  
-        background-color: #272727ab;
-        width: 100%;
-        height: 70%;
-    }
-
-} 
-@media (min-width: 1440px) {
-    .aside:hover {
-        width: 28dvw;
-    }
+.card_img-admin {
+    opacity: 40%;
 }
-/*---ANIMATIONS NAVBAR Y FOOTER---*/
+
+
+/*--------ANIMATIONS NAVBAR Y FOOTER--------*/
+
 .btn-hover{
     position: relative;
     cursor: pointer;
@@ -287,6 +174,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--facebook:hover {
     top: 35%;
@@ -296,6 +184,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--youtube:hover {
     top: 35%;
@@ -305,6 +194,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--instagram:hover {
     top: 35%;
@@ -314,4 +204,150 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
+
+
+/*Tablet styles*/
+
+@media (min-width: 768px) {
+    .icon_aside {
+        font-size: 4dvw;
+    }
+    .icon_star_top {
+        font-size: 5dvw;
+    }
+    .card-title {
+        font-size: 3dvw;
+    }
+    .icon_star {
+        font-size: 3dvw;
+    }
+    .bi-person-fill {
+        font-size: 3.5dvw;
+        color: #FFFFFF;
+    } 
+    .offcanvas-start {
+        margin-left: 8.3dvw;
+    }
+    .offcanvas-title {
+        margin-left: 3dvw;
+        margin-top: 3dvw;
+    }
+    .opacity-md-100 {
+        opacity: 100% !important;
+    }
+    .ms-10 { 
+        margin-left: 8.1dvw;
+    }
+    .container-icon_aside {
+        margin-left: 1.1dvw;
+    }
+    .aside {
+        width: 7dvw;
+        background-color: #000123;
+        overflow: hidden;
+        -webkit-transition:width .2s linear;
+        transition: width .2s linear;
+    }
+    .aside:hover {
+        width: 47dvw;
+        border-bottom-right-radius: 20px;
+    }
+    .container-icon_aside a {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: #fff;
+    }
+    .icon_aside:hover {
+        color: #FF0F7B !important;
+        transition: 1s;
+    }
+    .card_pencil {
+        font-size: 12dvw;
+    }
+    .card_pencil:active {
+        font-size: 15dvw;
+    }
+}
+/*Desktop styles*/
+
+@media (min-width: 992px) {
+    .aside {
+        width: 7.5dvw;
+    }
+    .aside:hover {
+        width: 40dvw;
+    }
+    .icon_page {
+        font-size: 4dvw;
+    }
+    h1 {
+        font-size: 4dvw;
+    }
+    .card-title {
+        font-size: 2dvw;
+    }
+    .offcanvas-start {
+        margin-left: 8.3dvw;
+    }
+    .offcanvas-title {
+        margin-left: 3dvw;
+        margin-top: 3dvw;
+    }
+    .bi-person-fill {
+        font-size: 3.5dvw;
+        color: #FFFFFF;
+    } 
+    .main_img:hover {
+        filter: opacity(0.5);
+    }
+    .icon_page:hover {
+        color: #FF0F7B;
+        transition-duration: 0.5s;
+    }
+    .icon_page:active {
+        color: #000123;
+        font-size: 3.8dvw;
+    }
+    .star-hover {
+        opacity: 0;
+        z-index: 2;
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 13dvw;
+        justify-content: center;
+        align-items: center;
+    }
+    .star-hover:hover {
+        opacity: 100%;
+        background-color: #272727ab;
+    }
+    .card_pencil {
+        display: none;
+    }
+    .card_pencil-lg {
+        display: block;
+        font-size: 4.5dvw;
+        z-index: 2;
+        color: #FF0F7B;
+    }
+    .card_pencil-lg:hover {
+        font-size: 5.7dvw;
+    }
+    .card_img-admin:hover {
+        transform: scale(1.1);
+    }
+} 
+
+
+@media (min-width: 1440px) {
+    .aside:hover {
+        width: 28dvw;
+    }
+}
+
