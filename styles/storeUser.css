@@ -33,6 +33,7 @@ h1 {
 .bg-pink {
     background-color: #FF0F7B;
 }
+
 .icon_page {
     font-size: 8dvw;
     color: #FFFFFF;
@@ -47,18 +48,30 @@ h1 {
 .icon_star {
     font-size: 5dvw;
 }
-
 .bi-person-fill {
     font-size: 8dvw;
     color: #FFFFFF;
 } 
 
-.card-title {
-    font-size: 5dvw;
+.main_img-admin {
+    opacity: 40%;
+}
+.main_pencil {
+    font-size: 30dvw;
+    position: absolute;
+    color: #FF0F7B;
+    z-index: 2;
+    align-self: center;
+}
+.main_pencil:active {
+    transform: scale(1.3);
+}
+.main_pencil-lg {
+    display: none;
 }
 
-.card_pencil-lg {
-    display: none;
+.card-title {
+    font-size: 5dvw;
 }
 .card_pencil {
     font-size: 30dvw;
@@ -265,6 +278,14 @@ h1 {
         color: #FF0F7B !important;
         transition: 1s;
     }
+
+    .main_pencil {
+        font-size: 25dvw;
+        align-self: center;
+    }
+    .main_pencil:active {
+        transform: scale(1.3);
+    }
     .card_pencil {
         font-size: 12dvw;
     }
@@ -326,6 +347,13 @@ h1 {
     .star-hover:hover {
         opacity: 100%;
         background-color: #272727ab;
+    }
+    .main_pencil {
+        font-size: 25dvw;
+        color: #FF0F7B;
+    }
+    .main_pencil:hover {
+        transform: scale(1.3);
     }
     .card_pencil {
         display: none;
