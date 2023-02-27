@@ -259,3 +259,7 @@ body {
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
 }
+.img-backgrount-login:hover{
+    transition: 0.1s;
+    box-shadow: 2px 4px 25px 3px rgba(175,42,122,1);
+}
