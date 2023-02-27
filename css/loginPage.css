@@ -231,6 +231,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--facebook:hover {
     top: 35%;
@@ -240,6 +241,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--youtube:hover {
     top: 35%;
@@ -249,6 +251,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .media-icon--instagram:hover {
     top: 35%;
@@ -258,6 +261,7 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     animation: animate 5s linear infinite;
+    transform: scale(1.5);
 }
 .img-backgrount-login:hover{
     transition: 0.1s;
