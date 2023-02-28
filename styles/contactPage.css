@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: 30% !important;
 }
 
 .section-contact--title {
@@ -108,6 +109,7 @@ body {
 
     .section-contact {
         justify-content: center;
+        margin-top: 10% !important;
     }
 
     .container-map {
