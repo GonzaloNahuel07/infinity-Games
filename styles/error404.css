@@ -59,3 +59,33 @@ body {
         font-size: 2.5vw;
     }
 }
+.error-volver-inicio{
+    padding: 3%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.error-volver-inicio::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.error-volver-inicio:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}

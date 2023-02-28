@@ -55,7 +55,7 @@ h1 {
 }
 
 .aboutUsBackground {
-    background-image: url(../images/background-mouse.png);
+    background-image: url(../images/background/background-mouse.png);
     background-position: center;
     background-size: cover;
     height: 1000px;
@@ -64,7 +64,7 @@ h1 {
 /*About Us Cards*/
 
 .aboutUsCards {
-    background-image: url(../images/background-mouse.png);
+    background-image: url(../images/background/background-setup.png);
     background-position: center;
     background-size: cover;
 }
@@ -80,7 +80,7 @@ h1 {
   
   @keyframes slidein {
     from {
-      margin-top: 20%;
+      margin-top: 10%;
     }
   }
 
