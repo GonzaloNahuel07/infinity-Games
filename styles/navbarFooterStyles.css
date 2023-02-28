@@ -99,7 +99,7 @@ body {
     skew(-20deg);
 }
 .btn-hover:hover{
-    background: #272727;
+    background: #272727 !important;
 }
 .btn-hover-2{
     position: relative;
