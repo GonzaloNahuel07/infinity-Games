@@ -8,7 +8,7 @@ h1 {
 
 /*      Colors     */
 
-.blue {
+.blue, .footer, .navbar, .offcanvas {
     background-color: #000123 ;
 }
 .white {
@@ -30,9 +30,93 @@ h1 {
 .icon_star {
     font-size: 5dvw;
 }
-
+.bi-person-fill {
+    font-size: 8dvw;
+    color: #FFFFFF;
+} 
 .border-color-pink {
     border-color: #FF0F7B;
+}
+
+.btn-hover{
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+.btn-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+.btn-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.btn-hover:hover{
+    background: #272727;
+}
+.link-hover{
+    padding: 3%;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;
+    z-index: 0;
+    transition: all 0.3s;
+}
+
+.link-hover::before{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -50px;
+    width: 110%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #383b84, transparent);
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-120px)
+        skew(-20deg);
+}
+
+.link-hover:hover::before{
+    transform: translateX(300px)
+    skew(-20deg);
+}
+.page-title{
+    user-select: none;
+}
+.title-hover{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    background: linear-gradient(45deg, #383b84, #272727, #FF0F7B, #00FFFF, #fff, rgba(128, 128, 128, 0.493));
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
 }
 
 /*Tablet styles*/
@@ -41,7 +125,7 @@ h1 {
     .icon_aside {
         font-size: 4dvw;
     }
-    .icon_star_top {
+    .icon_star-top {
         font-size: 5dvw;
     }
     .card-title {
@@ -50,11 +134,59 @@ h1 {
     .icon_star {
         font-size: 3dvw;
     }
+    .bi-person-fill {
+        font-size: 3.5dvw;
+        color: #FFFFFF;
+    } 
+    .offcanvas-start {
+        margin-left: 8.3dvw;
+    }
+    .offcanvas-title {
+        margin-left: 3dvw;
+        margin-top: 3dvw;
+    }
+    .opacity-md-100 {
+        opacity: 100% !important;
+    }
+    .ms-10 { 
+        margin-left: 8.1dvw;
+    }
+    .container-icon_aside {
+        margin-left: 1.1dvw;
+    }
+    .aside {
+        width: 7dvw;
+        background-color: #000123;
+        overflow: hidden;
+        -webkit-transition:width .2s linear;
+        transition: width .2s linear;
+    }
+    .aside:hover {
+        width: 47dvw;
+        border-bottom-right-radius: 20px;
+    }
+    .container-icon_aside a {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: #fff;
+    }
+    .icon_aside:hover {
+        color: #FF0F7B !important;
+        transition: 1s;
+    }
 }
 
 /*Desktop styles*/
 
 @media (min-width: 992px) {
+    .aside {
+        width: 7.5dvw;
+    }
+    .aside:hover {
+        width: 40dvw;
+    }
     .icon_page {
         font-size: 4dvw;
     }
@@ -63,5 +195,22 @@ h1 {
     }
     .card-title {
         font-size: 2dvw;
+    }
+    .offcanvas-start {
+        margin-left: 8.3dvw;
+    }
+    .offcanvas-title {
+        margin-left: 3dvw;
+        margin-top: 3dvw;
+    }
+    .bi-person-fill {
+        font-size: 3.5dvw;
+        color: #FFFFFF;
+    } 
+}
+
+@media (min-width: 1440px) {
+    .aside:hover {
+        width: 28dvw;
     }
 }
