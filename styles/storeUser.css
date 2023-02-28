@@ -283,6 +283,7 @@ h1 {
     } 
     .main_img:hover {
         filter: opacity(0.5);
+        box-shadow: 0px 0px 15px 10px #ff0f7b2e;
     }
     .icon_page:hover {
         color: #FF0F7B;
