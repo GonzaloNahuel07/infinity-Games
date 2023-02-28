@@ -173,7 +173,7 @@ h1 {
 .media-icon--twitter:hover {
     top: 35%;
     left: 35%;
-    background: linear-gradient(90deg, #00FFFF, #fff, #00FFFF);
+    background: linear-gradient(90deg, #00FFFF, #000000, #00FFFF);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -183,7 +183,7 @@ h1 {
 .media-icon--facebook:hover {
     top: 35%;
     left: 35%;
-    background: linear-gradient(90deg, #0052f6, #fff, #0052f6);
+    background: linear-gradient(90deg, #0052f6, #000000, #0052f6);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -193,7 +193,7 @@ h1 {
 .media-icon--youtube:hover {
     top: 35%;
     left: 35%;
-    background: linear-gradient(90deg, #ff0000, #fff, #ff0000);
+    background: linear-gradient(90deg, #ff0000, #000000, #ff0000);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
