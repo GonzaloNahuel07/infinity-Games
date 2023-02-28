@@ -1,0 +1,325 @@
+:root {
+    --bubblegum-pink: #FF0F7B;
+    --dark-blue: #000123;
+    --dark-gray: #272727;
+    --light-gray: #B5B5B5;
+    --white: #FFFFFF;
+    --font-orbiton: 'Orbitron', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-orbiton);
+}
+
+.carousel {
+    width: 100% !important;
+}
+
+.main {
+    background-color: var(--dark-blue);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50% !important;
+}
+
+button.active {
+    background-color: var(--bubblegum-pink) !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    z-index: 0 !important;
+}
+
+.card-image {
+    width: 80%;
+    border-radius: 5px;
+}
+
+.card-stars {
+    margin: 0;
+    padding: 0;
+}
+
+.bi-star-fill,
+.bi-star-half {
+    color: var(--bubblegum-pink);
+}
+
+.main-ratings {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 25px;
+}
+
+.main-ratings--title {
+    font-size: 20px;
+    color: var(--white);
+}
+
+.card-gameName {
+    font-size: 15px;
+    margin: 0;
+    color: var(--white);
+}
+
+.container-cards-card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .card-gameName {
+        font-size: 22px;
+    }
+
+    .bi-star-fill,
+    .bi-star-half {
+        font-size: 1.3rem;
+    }
+
+
+    .card-image{
+        width: 300px;
+    }
+
+}  
+
+@media (min-width: 1024px) {
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-gameName {
+        font-size: 29px;
+    }
+
+    .bi-star-fill,
+    .bi-star-half {
+        font-size: 1.5rem;
+    }
+
+    .card-image{
+        width: 400px;
+    }
+
+    .card-image:hover {
+        transition: 0.1s;
+        box-shadow: 2px 4px 25px 3px rgba(175,42,122,1);
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .container-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .card-gameName {
+        font-size: 36px;
+    }
+
+    .bi-star-fill,
+    .bi-star-half {
+        font-size: 1.7rem;
+    }
+
+    .card-image{
+        width: 500px;
+    }
+
+    .card-image:hover {
+        transition: 0.1s;
+        box-shadow: 2px 4px 25px 3px rgba(175,42,122,1);
+    }
+
+}
+
+
+
+/*---------ANIMACIÓN PORTADA--------*/
+
+@media (min-width: 768px) {
+.front-page {
+    position: absolute;
+    display: flex;
+    background: #000123;
+    width: 100%;
+    height: 200dvw;
+    animation: frontPage 6s ease-in forwards;
+    z-index: 100;
+    animation-delay: 5s;
+}
+.front-page--text {
+    font-family: 'Orbitron', sans-serif;
+    animation: h1 5s ease-in forwards;
+    animation-delay: 1s;
+    margin-top: 25dvw;
+    color: var(--bubblegum-pink);
+    font-size: 7dvw;
+    z-index: 200;
+    background: linear-gradient(45deg, #383b84, #272727, #FF0F7B, #00FFFF, #fff, rgba(128, 128, 128, 0.493));
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes messi {
+    100% {
+        margin-left: 66dvw;
+        margin-top: -18dvw;
+        opacity: 0%;
+    }
+}
+@keyframes rayman {
+    100% {
+        margin-left: -30dvw;
+        margin-top: -3dvw;
+        opacity: 0%;
+    }
+}
+@keyframes bandicoot {
+    100% {
+        margin-left: 83dvw;
+        margin-top: 38dvw;
+        opacity: 0%;
+        display: none
+    }
+}
+@keyframes kratos {
+    100% {
+        margin-top: 40dvw;
+        opacity: 0%;
+    }
+}
+@keyframes sims {
+    100% {
+        margin-top: 32dvw;
+        opacity: 0%;
+    }
+}
+@keyframes scorpion {
+    100% {
+        margin-left: -30dvw;
+        margin-top: 28dvw;
+        opacity: 0%;
+    }
+}
+/*----MESSI----*/
+.front-page--img1{
+    width: 32dvw;
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 66dvw;
+    animation: messi 6s ease-in 1s forwards;
+}
+/*----BANDICOOT----*/
+.front-page--img2 {
+    width: 13dvw;
+    position: absolute;
+    margin-left: 80dvw;
+    margin-top: 25dvw;
+    animation: bandicoot 6s ease-in 1s forwards;
+}
+/*----RAYMAN----*/
+.front-page--img3 {
+    width: 23dvw;
+    position: absolute;
+    margin-left: 16dvw;
+    margin-top: 1dvw;
+    animation: rayman 6s ease-in 1s forwards;
+}
+/*----KRATOS----*/
+.front-page--img4 {
+    width: 21dvw;
+    position: absolute;
+    margin-left: 36dvw;
+    margin-top: 17dvw;
+    animation: kratos 6s ease-in 1s forwards;
+
+}
+/*----SCORPION----*/
+.front-page--img5 {
+    width: 20dvw;
+    position: absolute;
+    margin-left: 2dvw;
+    margin-top: 21dvw;
+    animation: scorpion 6s ease-in 1s forwards;
+
+}
+/*----SIMS----*/
+.front-page--img6 {
+    width: 6.5dvw;
+    position: absolute;
+    margin-left: 46dvw;
+    margin-top: 10dvw;
+    animation: sims 6s ease-in 1s forwards;
+
+}
+.main {
+    z-index: 1;
+    animation: main 6s linear;
+    opacity: 100%;
+    color: transparent;
+}
+@keyframes h1 {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+        margin-top: -85px;
+        color: transparent;
+        visibility: hidden;
+    }
+}
+@keyframes frontPage {
+    100% {
+        opacity: 0%;
+        display: none;
+        z-index: 0;
+    }
+}
+@keyframes main {
+    0% {
+        overflow: hidden;
+        color: transparent;
+    }
+    50% {
+        opacity: 60%;
+    }
+    100% {
+        opacity: 100%;
+        z-index: 1111111;
+    }
+}
+}
