@@ -24,6 +24,7 @@
 .main {
     background-color: var(--dark-blue);
     padding-top: 23% !important;
+    padding-bottom: 5% !important;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -97,6 +98,7 @@ button.active {
     }
     .main{
         padding-top: 9% !important;
+        padding-bottom: 5% !important;
     }
     .offcanvas-start{
         opacity: 100% !important;
@@ -128,6 +130,10 @@ button.active {
 @media (min-width: 1024px) {
     .front-page{
         display: flex !important;
+    }
+    .main{
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
     }
     .container-cards {
         display: flex;
