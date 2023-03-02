@@ -94,6 +94,13 @@ button.active {
     .front-page{
         display: flex !important;
     }
+    .main{
+        padding-top: 9% !important;
+    }
+    .offcanvas-start{
+        opacity: 100% !important;
+        width: 30% !important;
+    }
     .container-cards {
         display: flex;
         flex-direction: row;
@@ -125,6 +132,10 @@ button.active {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    .offcanvas-start{
+        opacity: 100% !important;
+        width: 30% !important;
     }
 
     .card-gameName {
