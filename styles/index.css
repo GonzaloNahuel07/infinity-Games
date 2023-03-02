@@ -23,6 +23,7 @@
 
 .main {
     background-color: var(--dark-blue);
+    padding-top: 23% !important;
 }
 
 .carousel-indicators [data-bs-target] {
