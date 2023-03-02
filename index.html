@@ -11,6 +11,7 @@
     />
     <title>Infinity Games</title>
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbarFooterStyles.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -29,6 +30,112 @@
     />
   </head>
   <body>
+    <div class="header">
+        <!-- HEADER -->
+        <header class="header row fixed-top justify-content-between">
+          <!-- NAVBAR -->
+          <nav class="navbar blue fixed-top w-100">
+              <!-- MENU -->
+              <div class="burger-bg container-fluid opacity-75 d-flex">
+                  <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="burguer bi bi-list text-light" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                  </button>
+                  <div class="offcanvas blue offcanvas-start w-100 fs-1" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                          <h5 class="offcanvas-title text-white page-title" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
+                          <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body d-flex">
+                          <ul class="navbar-nav justify-content-start d-flex flex-row">
+                              <div class="p-md-4 d-flex flex-column">
+                                  <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="../index.html">INICIO</a>
+                                  <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="storeUser.html">TIENDA</a>
+                                  <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./storeUser.html">BIBLIOTECA</a>
+                                  <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
+                                  <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./aboutUs.html">ACERCA DE NOSOTROS</a>
+                              </div>
+                          </ul>
+                      </div>
+                  </div>    
+                  <div class="header-title d-flex">
+                      <h1 class="title text-center text-white fs-3 d-none d-md-flex page-title title-hover">INFINITY GAMES</h1>
+                  </div>
+                  <div class="headerTitle d-flex flex-row align-items-center px-3">
+                      <div class="userButtons d-flex align-items-center">
+                          <i class="bi bi-person-fill text-light mx-1 fs-2 d-flex"></i>
+                          <a href="#" class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
+                          <div class="modalRegister">
+                              <!-- Button trigger modal -->
+                              <button type="button" class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                  Registrarse
+                              </button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade border-pink" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header blue border-pink">
+              <h1 class="modal-title fs-5 text-center text-light" id="exampleModalLabel">REGISTRARSE</h1>
+              <button type="button" class="btn-close bg-pink" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body blue border-pink">
+              <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
+                      <div class="newUserName mb-3 d-flex justify-content-center align-items-center">
+                          <input
+                              class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                              type="text" 
+                              name="newUserName" 
+                              id="newUserName" 
+                              placeholder="Nombre y Apellido">
+                      </div>
+                      <div class="newUserNickname mb-3 d-flex justify-content-center align-items-center">
+                          <input 
+                              class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                              type="text" 
+                              name="userNickName" 
+                              id="newUserNickName"
+                              placeholder="Nombre de Usuario">
+                      </div>
+                      <div class="newUserEmail mb-3 d-flex justify-content-center align-items-center">
+                          <input 
+                              class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                              type="email" 
+                              name="newUserEmail" 
+                              id="newUserEmail"
+                              placeholder="Correo electronico">
+                      </div>
+                      <div class="newUserPassword mb-3 d-flex justify-content-center align-items-center">
+                          <input 
+                              class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                              type="password" 
+                              name="newUserPasword" 
+                              id="newUserPasword"
+                              placeholder="Contraseña">
+                      </div>
+                      <div class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center">
+                          <input 
+                              class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                              type="password" 
+                              name="newUserPaswordConfirm" 
+                              id="newUserPaswordConfirm"
+                              placeholder="Repetir contraseña">
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer blue border-pink">
+              <button type="button" class="btn btn-light text-dark btn-hover-2">Registrarse</button>
+              </div>
+          </div>
+          </div>
+      </div>
+    </div>
     <div class="front-page">
       <audio src="./audio/play.mp3" autoplay></audio>
       <h1 class="mx-auto front-page--text">INFINITY GAMES</h1>
@@ -186,6 +293,21 @@
         </div>
       </div>
     </main>
+    <!-- FOOTER -->
+    <footer class="row blue">
+        <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
+            <div class="footer_title justify-content-center align-items-center d-flex flex-column">
+                <h1 class="text-center text-white mb-5 fs-md-1 fs-2 page-title">INFINITY GAMES</h1>
+                <a class="link-hover text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
+            </div>
+            <div class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
+                <a class="media-icon--twitter bi bi-twitter text-white fs-1" href="https://twitter.com/?lang=es" target="blank"></a>
+                <a class="media-icon--facebook bi bi-facebook text-white fs-1" href="https://es-la.facebook.com/" target="_blank"></a>
+                <a class="media-icon--youtube bi bi-youtube text-white fs-1" href="https://www.youtube.com/" target="_blank"></a>
+                <a class="media-icon--instagram bi bi-instagram text-white fs-1" href="https://www.instagram.com/" target="_blank"></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/app.js"></script>
     <script

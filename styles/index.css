@@ -13,6 +13,9 @@
     box-sizing: border-box;
     font-family: var(--font-orbiton);
 }
+.front-page{
+    display: none !important;
+}
 
 .carousel {
     width: 100% !important;
@@ -88,6 +91,9 @@ button.active {
 }
 
 @media (min-width: 768px) {
+    .front-page{
+        display: flex !important;
+    }
     .container-cards {
         display: flex;
         flex-direction: row;
@@ -112,6 +118,9 @@ button.active {
 }  
 
 @media (min-width: 1024px) {
+    .front-page{
+        display: flex !important;
+    }
     .container-cards {
         display: flex;
         flex-direction: row;
@@ -285,11 +294,14 @@ button.active {
     animation: sims 6s ease-in 1s forwards;
 
 }
-.main {
+.main, .header {
     z-index: 1;
     animation: main 6s linear;
     opacity: 100%;
     color: transparent;
+}
+.main {
+    padding-top: 5%;
 }
 @keyframes h1 {
     0% {
