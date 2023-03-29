@@ -38,6 +38,34 @@ h1 {
     border-color: #FF0F7B;
 }
 
+
+
+
+h3 {
+    font-size: 4.5dvw;
+}
+.game-title {
+    font-size: 6dvw;
+}
+.text-requirements-title {
+    font-size: 3.5dvw ;
+}
+.text-requirements {
+    font-size: 3dvw;
+}
+.text-product {
+    font-size: 3dvw;
+    text-align: justify;
+    line-height: 5.5dvw;
+}
+.favorite {
+    width: 7dvw;
+}
+
+
+
+
+
 .btn-hover{
     position: relative;
     cursor: pointer;
@@ -176,6 +204,26 @@ h1 {
         color: #FF0F7B !important;
         transition: 1s;
     }
+
+    h3 {
+        font-size: 3dvw;
+    }
+    .game-title {
+        font-size: 5dvw;
+    }
+    .text-requirements-title {
+        font-size: 2.5dvw ;
+    }
+    .text-requirements {
+        font-size: 2.2dvw;
+    }
+    .text-product {
+        font-size: 2.2dvw;
+        line-height: 5dvw;
+    }
+    .favorite {
+        width: 6dvw;
+    }
 }
 
 /*Desktop styles*/
@@ -207,10 +255,36 @@ h1 {
         font-size: 3.5dvw;
         color: #FFFFFF;
     } 
+    h3 {
+        font-size: 2dvw;
+    }
+    .game-title {
+        font-size: 4dvw;
+    }
+    .text-requirements-title {
+        font-size: 1.5dvw ;
+    }
+    .text-requirements {
+        font-size: 1.2dvw;
+    }
+    .text-product {
+        font-size: 1.3dvw;
+        line-height: 3dvw;
+    }
+    .favorite {
+        width: 5dvw;
+    }
 }
 
 @media (min-width: 1440px) {
     .aside:hover {
         width: 28dvw;
+    }
+    .text-requirements {
+        font-size: 1.1dvw;
+    }
+    .text-product {
+        font-size: 1.1dvw;
+        line-height: 3dvw;
     }
 }

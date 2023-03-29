@@ -1,290 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/aboutUs.css">
-    <link rel="stylesheet" href="../styles/navbarFooterStyles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/aboutUs.css" />
+    <link rel="stylesheet" href="../styles/navbarFooterStyles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="../images/logo/logoIG.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
+      rel="stylesheet"
     />
     <title>Infinity Games</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
       <!-- HEADER -->
-          <header class="row fixed-top justify-content-between">
-              <!-- NAVBAR -->
-              <nav class="navbar blue fixed-top w-100">
-                  <!-- MENU -->
-                  <div class="burger-bg container-fluid opacity-75 d-flex">
-                      <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="burguer bi bi-list text-light" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                          </svg>
-                      </button>
-                      <div class="offcanvas blue offcanvas-start w-md-75 fs-1" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                          <div class="offcanvas-header">
-                              <h5 class="offcanvas-title text-white page-title" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
-                              <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                          </div>
-                          <div class="offcanvas-body d-flex">
-                              <ul class="navbar-nav justify-content-start d-flex flex-row">
-                                  <div class="p-md-4 d-flex flex-column">
-                                      <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="../index.html">INICIO</a>
-                                      <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="storeUser.html">TIENDA</a>
-                                      <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./storeUser.html">BIBLIOTECA</a>
-                                      <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
-                                      <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./aboutUs.html">ACERCA DE NOSOTROS</a>
-                                  </div>
-                              </ul>
-                          </div>
-                      </div>    
-                      <div class="header-title d-flex">
-                          <h1 class="title text-center text-white fs-3 d-none d-md-flex page-title title-hover">INFINITY GAMES</h1>
-                      </div>
-                      <div class="headerTitle d-flex flex-row align-items-center px-3">
-                          <div class="userButtons d-flex align-items-center">
-                              <i class="bi bi-person-fill text-light mx-1 fs-2 d-flex"></i>
-                              <a href="#" class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
-                              <div class="modalRegister">
-                                  <!-- Button trigger modal -->
-                                  <button type="button" class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                      Registrarse
-                                  </button>
-                              </div>
-                          </div>
-                      </div>
+      <header class="row fixed-top justify-content-between">
+        <!-- NAVBAR -->
+        <nav class="navbar blue fixed-top w-100">
+          <!-- MENU -->
+          <div class="burger-bg container-fluid opacity-100 d-flex">
+            <button
+              class="navbar-toggler fs-1 mx-2"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="burguer bi bi-list text-light"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+            </button>
+            <div
+              class="offcanvas blue opacity-100 offcanvas-start w-md-75 fs-1"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5
+                  class="offcanvas-title text-white page-title"
+                  id="offcanvasNavbarLabel"
+                >
+                  INFINITY GAMES
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close bg-pink"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body opacity-100 d-flex">
+                <ul class="navbar-nav justify-content-start d-flex flex-row">
+                  <div class="p-md-4 opacity-100 d-flex flex-column">
+                    <a
+                      class="link-hover mt-2 text-white text-decoration-none fs-5"
+                      href="../index.html"
+                      >INICIO</a
+                    >
+                    <a
+                      class="link-hover mt-2 text-white text-decoration-none fs-5"
+                      href="./loginPage.html"
+                      >TIENDA</a
+                    >
+                    <a
+                      class="link-hover mt-2 text-white text-decoration-none fs-5"
+                      href="./error404.html"
+                      >BIBLIOTECA</a
+                    >
+                    <a
+                      class="link-hover mt-2 text-white text-decoration-none fs-5"
+                      href="./contactPage.html"
+                      >CONTACTO</a
+                    >
+                    <a
+                      class="link-hover mt-2 text-white text-decoration-none fs-5"
+                      href="./aboutUs.html"
+                      >ACERCA DE NOSOTROS</a
+                    >
                   </div>
-              </nav>
-          </header>
+                </ul>
+              </div>
+            </div>
+            <div class="header-title d-flex">
+              <h1
+                class="title text-center text-white fs-3 d-none d-md-flex page-title title-hover"
+              >
+                INFINITY GAMES
+              </h1>
+            </div>
+            <div class="headerTitle d-flex flex-row align-items-center px-3">
+              <div class="userButtons d-flex align-items-center">
+                <a href="./loginPage.html" class="bi bi-person-fill text-light mx-1 text-decoration-none fs-2 d-flex"></a>
+                <a
+                  id="login-button"
+                  href="./loginPage.html"
+                  class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex"
+                  >Iniciar Sesion</a
+                >
+                <div class="modalRegister">
+                  <!-- Button trigger modal -->
+                  <button
+                    type="button"
+                    class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Registrarse
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Modal -->
 
-        <!-- Finish Navbar -->
+      <div
+        class="modal fade border-pink"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div id="formModal" class="modal-content">
+            <div class="modal-header blue border-pink">
+              <h1
+                class="modal-title fs-5 text-center text-light"
+                id="exampleModalLabel"
+              >
+                REGISTRARSE
+              </h1>
+              <button
+                type="button"
+                class="btn-close bg-pink"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body blue border-pink">
+              <div
+                class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center w-100"
+              >
+                <div
+                  class="newUserName mb-3 d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                    type="text"
+                    name="newUserName"
+                    id="newUserName"
+                    placeholder="Nombre y Apellido"
+                  />
+                  <br />
+                </div>
+                <p class="text-danger d-none" id="alertName"></p>
+                <div
+                  class="newUserNickname mb-3 d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                    type="text"
+                    name="userNickName"
+                    id="newUserNickName"
+                    value=""
+                    placeholder="Nombre de Usuario"
+                  />
+                </div>
+                <p class="text-danger d-none" id="alertNickName"></p>
+                <div
+                  class="newUserEmail mb-3 d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                    type="email"
+                    name="newUserEmail"
+                    id="newUserEmail"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <p class="text-danger d-none" id="alertEmail"></p>
+                <div
+                  class="newUserPassword mb-3 d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                    type="password"
+                    name="newUserPassword"
+                    id="newUserPassword"
+                    placeholder="Contraseña"
+                  />
+                </div>
+                <p class="text-danger d-none" id="alertPassword"></p>
+                <div
+                  class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center"
+                >
+                  <input
+                    class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                    type="password"
+                    name="newUserPasswordConfirm"
+                    id="newUserPasswordConfirm"
+                    placeholder="Repetir contraseña"
+                  />
+                </div>
+                <p class="text-danger d-none" id="alertPasswordConfirm"></p>
+              </div>
+            </div>
 
-        <!-- Start Aside -->
+            <div
+              class="modal-footer blue border-pink d-flex justify-content-center"
+            >
+              <button
+                id="submitRegister"
+                type="button"
+                class="btn btn-light text-dark btn-hover-2 col-8"
+                data-bs-dismiss=""
+                aria-label=""
+              >
+                Registrarse
+              </button>
+              <br />
+              <p
+                id="successForm"
+                class="text-center blue pink pb-1 col-12 mt-2"
+              ></p>
+              <p
+                id="successForm"
+                class="text-center blue pink pb-1 col-12 mt-2 d-none alertUserEx"
+              >
+                Usuario ya existente, inicie sesion
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-         <main class="row mt-2">
+      <!-- Finish Navbar -->
 
-
-            <section class="d-none blue">
-                <div class="row sticky-top pt-5">
-                    <div class="d-flex mb-5 justify-content-center">
-                        <a href="#" class="icon_aside text-white bi bi-tag-fill"></a>
-                    </div>          
-                    <div class="d-flex mb-5 justify-content-center">
-                        <a href="#" class="icon_aside text-white bi bi-cart-fill"></a>
-                    </div>
-                    <div class="d-flex mb-5 justify-content-center">
-                        <a href="#" class="icon_aside text-white bi bi-heart-fill"></a>
-                    </div>
-                    <div class="d-flex mb-5 justify-content-center">
-                        <a href="#" class="icon_aside text-white bi bi-cloud-arrow-down-fill"></a>
-                    </div>
-                </div>  
-            </section>
-
-        <!-- Finish Aside -->
-
+      <main class="row mt-2">
         <!-- Start About Us Slide -->
 
-            <section class="aboutUsBackground has-bg-img text-center col-md-12">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <h1 class="text-light" style="margin-top: 300px;">SOBRE NOSOTROS</h1>
-                    </div>
-                    <div class="col-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="arrow bi bi-chevron-down text-light" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                    </div>
-                    <div class="col-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="arrow bi bi-chevron-down text-light" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                          </svg>
-                    </div>
-                </div>
-            </section>
+        <section class="aboutUsBackground has-bg-img text-center col-md-12">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <h1 class="text-light" style="margin-top: 300px">
+                SOBRE NOSOTROS
+              </h1>
+            </div>
+            <div class="col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill="currentColor"
+                class="arrow bi bi-chevron-down text-light"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="col-12">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill="currentColor"
+                class="arrow bi bi-chevron-down text-light"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
 
         <!-- Finish About Us Slide -->
 
         <!-- Start About Us Cards -->
 
-        <section class="row aboutUsCards justify-content-center pb-5" style="margin-left: 0px;">
-            <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none mb-5">
-                <div class="card border border-0 w-100" style="width: 18rem;">
-                    <img src="../images/background/profileCard.png" class="card-img-top" alt="Member ID Card">
-                    <div class="card-body text-center blue">
-                      <h5 class="card-title fs-1-lg" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light fs-lg-1">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5" style="max-width: 900px;">
-                <div class="row g-0 p-2 blue">
-                  <div class="col-md-4">
-                    <img src="../images/background/profileCard.png" class="img-cover rounded-start" alt="Profile Image" style="max-height: 329px;">
-                  </div>
-                  <div class="col-md-8 blue">
-                    <div class="card-body blue">
-                        <h5 class="card-title mt-5 pt-5" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                        <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
+        <section
+          class="row aboutUsCards justify-content-center pb-5"
+          style="margin-left: 0px"
+        >
+          <!--card 1 mobile-->
+          <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none mb-5">
+            <div class="card border border-0 w-100" style="width: 18rem">
+              <img
+                src="../images/background/profileCard.png"
+                class="card-img-top"
+                alt="Member ID Card"
+              />
+              <div class="card-body text-center blue">
+                <h5 class="card-title fs-1-lg" style="color: #ff0f7b">
+                  ¿QUIENES SOMOS?
+                </h5>
+                <p class="card-text text-light fs-lg-1">
+                  Somos un grupo de estudiantes de la Academia DevSchool en
+                  camino a ser desarrolladores FullStack.
+                </p>
               </div>
-            <div class="col-12 text-center mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrowCards bi bi-chevron-double-down text-light" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
             </div>
-            <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
-                <div class="card border border-0 w-100" style="width: 18rem;">
-                    <img src="../images/background/profileCard.png" class="card-img-top" alt="Member ID Card">
-                    <div class="card-body text-center blue">
-                      <h5 class="card-title" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5" style="max-width: 900px;">
-              <div class="row g-0 p-2 blue">
-                <div class="col-md-4">
-                  <img src="../images/background/profileCard.png" class="img-cover rounded-start" alt="Profile Image" style="max-height: 329px;">
-                </div>
-                <div class="col-md-8 blue">
-                  <div class="card-body blue">
-                      <h5 class="card-title mt-5 pt-5" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+          </div>
+          <!--card 1 xl-->
+          <div
+            class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5"
+            style="max-width: 900px"
+          >
+            <div class="row g-0 p-2 blue">
+              <div class="col-md-4">
+                <img
+                  src="../images/background/profileCard.png"
+                  class="img-cover rounded-start"
+                  alt="Profile Image"
+                  style="max-height: 329px"
+                />
+              </div>
+              <div class="col-md-8 blue">
+                <div class="card-body blue">
+                  <h5 class="card-title mb-2 pt-5" style="color: #ff0f7b">
+                    ¿QUIENES SOMOS?
+                  </h5>
+                  <p class="card-text text-light">
+                    Somos un grupo de estudiantes de la Academia DevSchool en
+                    camino a ser desarrolladores FullStack.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-12 text-center mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrowCards bi bi-chevron-double-down text-light" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
+          </div>
+          <!--flecha animada-->
+          <div class="col-12 text-center mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="arrowCards bi bi-chevron-double-down text-light"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <!--card 2 mobile-->
+          <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
+            <div class="card border border-0 w-100" style="width: 18rem">
+              <img
+                src="../images/background/profileCard.png"
+                class="card-img-top"
+                alt="Member ID Card"
+              />
+              <div class="card-body text-center blue">
+                <h5 class="card-title" style="color: #ff0f7b">
+                  ¿CUÁL ES EL OBJETIVO DE ESTE PROJECTO?
+                </h5>
+                <p class="card-text text-light">
+                  El objetivo principal del proyecto fue poner en práctica los
+                  conceptos aprendidos sobre HTML, CSS y JavaScript fusionándolo
+                  con nuestro gusto personal sobre los videojuegos.
+                </p>
+              </div>
             </div>
-            <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
-                <div class="card border border-0 w-100" style="width: 18rem;">
-                    <img src="../images/background/profileCard.png" class="card-img-top" alt="Member ID Card">
-                    <div class="card-body text-center blue">
-                      <h5 class="card-title" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5" style="max-width: 900px;">
-              <div class="row g-0 p-2 blue">
-                <div class="col-md-4">
-                  <img src="../images/background/profileCard.png" class="img-cover rounded-start" alt="Profile Image" style="max-height: 329px;">
-                </div>
-                <div class="col-md-8 blue">
-                  <div class="card-body blue">
-                      <h5 class="card-title mt-5 pt-5" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+          </div>
+          <!--card 2 xl-->
+          <div
+            class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5"
+            style="max-width: 900px"
+          >
+            <div class="row g-0 p-2 blue">
+              <div class="col-md-4">
+                <img
+                  src="../images/background/profileCard.png"
+                  class="img-cover rounded-start"
+                  alt="Profile Image"
+                  style="max-height: 329px"
+                />
+              </div>
+              <div class="col-md-8 blue">
+                <div class="card-body blue">
+                  <h5 class="card-title mb-2 pt-5" style="color: #ff0f7b">
+                    ¿CUÁL ES EL OBJETIVO DE ESTE PROJECTO?
+                  </h5>
+                  <p class="card-text text-light">
+                    El objetivo principal del proyecto fue poner en práctica los
+                    conceptos aprendidos sobre HTML, CSS y JavaScript
+                    fusionándolo con nuestro gusto personal sobre los
+                    videojuegos.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-12 text-center mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrowCards bi bi-chevron-double-down text-light" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
+          </div>
+          <!--flecha animada-->
+          <div class="col-12 text-center mt-5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="arrowCards bi bi-chevron-double-down text-light"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
+          <!--card 3 mobile-->
+          <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
+            <div class="card border border-0 w-100" style="width: 18rem">
+              <img
+                src="../images/background/profileCard.png"
+                class="card-img-top"
+                alt="Member ID Card"
+              />
+              <div class="card-body text-center blue">
+                <h5 class="card-title" style="color: #ff0f7b">
+                  INTEGRANTES DEL PROYECTO
+                </h5>
+                <p class="card-text text-light text-start">
+                  Clara Costa - 26 años <br />
+                  Gianfranco Marzulli - 22 años <br />
+                  Gonzalo Gramajo - 24 años <br />
+                  Máximo Decima - 20 años
+                </p>
+              </div>
             </div>
-            <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
-                <div class="card border border-0 w-100" style="width: 18rem;">
-                    <img src="../images/background/profileCard.png" class="card-img-top" alt="Member ID Card">
-                    <div class="card-body text-center blue">
-                      <h5 class="card-title" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5" style="max-width: 900px;">
-              <div class="row g-0 p-2 blue">
-                <div class="col-md-4">
-                  <img src="../images/background/profileCard.png" class="img-cover rounded-start" alt="Profile Image" style="max-height: 329px;">
-                </div>
-                <div class="col-md-8 blue">
-                  <div class="card-body blue">
-                      <h5 class="card-title mt-5 pt-5" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+          </div>
+          <!--card 3 xl-->
+          <div
+            class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5"
+            style="max-width: 900px"
+          >
+            <div class="row g-0 p-2 blue">
+              <div class="col-md-4">
+                <img
+                  src="../images/background/profileCard.png"
+                  class="img-cover rounded-start"
+                  alt="Profile Image"
+                  style="max-height: 329px"
+                />
+              </div>
+              <div class="col-md-8 blue">
+                <div class="card-body blue">
+                  <h5 class="card-title mb-2 pt-5" style="color: #ff0f7b">
+                    INTEGRANTES DEL PROYECTO
+                  </h5>
+                  <p class="card-text text-light">
+                    Clara Costa - 26 años <br />
+                    Gianfranco Marzulli - 22 años <br />
+                    Gonzalo Gramajo - 24 años <br />
+                    Máximo Decima - 20 años
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col-12 text-center mt-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="arrowCards bi bi-chevron-double-down text-light" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>
-            </div>
-            <div class="col-10 col-sm-8 col-xl-6 col-xxl-5 mt-5 d-xl-none">
-                <div class="card border border-0 w-100" style="width: 18rem;">
-                    <img src="../images/background/profileCard.png" class="card-img-top" alt="Member ID Card">
-                    <div class="card-body text-center blue">
-                      <h5 class="card-title" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="card mb-3 d-none d-xl-block border border-0 p-0 mt-5" style="max-width: 900px;">
-              <div class="row g-0 p-2 blue">
-                <div class="col-md-4">
-                  <img src="../images/background/profileCard.png" class="img-cover rounded-start" alt="Profile Image" style="max-height: 329px;">
-                </div>
-                <div class="col-md-8 blue">
-                  <div class="card-body blue">
-                      <h5 class="card-title mt-5 pt-5" style="color: #FF0F7B;">¿QUIENES SOMOS?</h5>
-                      <p class="card-text text-light">Somos un grupo de estudiantes de DevSchool Academia en camino a ser desarrolladores FullStack.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
         </section>
 
         <!-- Finish About Us Cards -->
-
-        </main>
-        <!-- FOOTER -->
-        <footer class="row blue">
-            <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
-                <div class="footer_title justify-content-center align-items-center d-flex flex-column">
-                    <h1 class="text-center text-white mb-5 fs-md-1 fs-2 page-title">INFINITY GAMES</h1>
-                    <a class="link-hover text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
-                </div>
-                <div class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
-                    <a class="media-icon--twitter bi bi-twitter text-white fs-1" href="https://twitter.com/?lang=es" target="blank"></a>
-                    <a class="media-icon--facebook bi bi-facebook text-white fs-1" href="https://es-la.facebook.com/" target="_blank"></a>
-                    <a class="media-icon--youtube bi bi-youtube text-white fs-1" href="https://www.youtube.com/" target="_blank"></a>
-                    <a class="media-icon--instagram bi bi-instagram text-white fs-1" href="https://www.instagram.com/" target="_blank"></a>
-                </div>
-            </div>
-        </footer>
-
+      </main>
+      <!-- FOOTER -->
+      <footer class="row blue">
+        <div
+          class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center"
+        >
+          <div
+            class="footer_title justify-content-center align-items-center d-flex flex-column"
+          >
+            <h1 class="text-center text-white mb-5 fs-md-1 fs-2 page-title">
+              INFINITY GAMES
+            </h1>
+            <a
+              class="link-hover text-white mb-5 fs-3 text-decoration-none my-2"
+              href="./contactPage.html"
+              id="contact-button"
+              >CONTACTO</a
+            >
+          </div>
+          <div
+            class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap"
+          >
+            <a
+              class="media-icon--twitter bi bi-twitter text-white fs-1"
+              href="https://twitter.com/?lang=es"
+              target="blank"
+            ></a>
+            <a
+              class="media-icon--facebook bi bi-facebook text-white fs-1"
+              href="https://es-la.facebook.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="media-icon--youtube bi bi-youtube text-white fs-1"
+              href="https://www.youtube.com/"
+              target="_blank"
+            ></a>
+            <a
+              class="media-icon--instagram bi bi-instagram text-white fs-1"
+              href="https://www.instagram.com/"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </footer>
     </div>
+    <script src="../js/navbarFooter.js" type="module"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./js/app.js" type="module"></script>
-</body>
+    <script src="../js/login.js"></script>
+  </body>
 </html>

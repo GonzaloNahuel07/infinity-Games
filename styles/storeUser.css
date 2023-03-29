@@ -3,7 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.game-cart-name, .bi-x-circle-fill  {
+    z-index: 1000;
+}
+.bi-x-circle-fill {
+    top: 5dvw;
+    right: -2dvw;
+    color: #000123;
+    background-color: #FF0F7B;
+    border-radius: 70%;
+    cursor: pointer;
+}
 body {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
@@ -11,6 +21,13 @@ body {
 }
 h1 {
     font-size: 5dvw;
+}
+.icon_aside-text {
+    cursor: pointer;
+    text-decoration: none;
+}
+.main_text {
+    cursor: pointer;
 }
 
 .mt-10 {
@@ -34,6 +51,10 @@ h1 {
     background-color: #FF0F7B;
 }
 
+
+.rate_main {
+    font-size: 4dvw;
+}
 .icon_page {
     font-size: 8dvw;
     color: #FFFFFF;
@@ -48,23 +69,49 @@ h1 {
 .icon_star {
     font-size: 5dvw;
 }
+
 .bi-person-fill {
     font-size: 8dvw;
     color: #FFFFFF;
 } 
 
+.back-arrow {
+    width: 40px;
+    cursor: pointer;
+}
+.favorite {
+    cursor: pointer;
+}
+.btn-cart {
+    border: 1px solid #FF0F7B;
+    border-radius: 10px;
+    color: #FF0F7B;
+    background-color: transparent;
+}
 .card-title {
     font-size: 5dvw;
+    cursor: pointer;
+}
+.main_img{
+    cursor: pointer;
 }
 .star-hover {
   display: none;
 }
-.card-img-top {
+.card-img {
     z-index: 1;
     box-shadow: 0px 0px 15px 10px #ff0f7b2e;
+    aspect-ratio: 2 /1 ;
 }
-.card-img-top:active {
+.card-img:active {
     transform: scale(1.1);
+}
+.requirements {
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+.req-rec {
+    border-top: 2px solid #FFFFFF ;
 }
 
 
@@ -201,11 +248,18 @@ h1 {
     .icon_star-top {
         font-size: 5dvw;
     }
+
+    .back-arrow {
+        width: 50px;
+    }
     .card-title {
         font-size: 3dvw;
     }
     .icon_star {
         font-size: 3dvw;
+    }
+    .icon_star-hover {
+        font-size: 2dvw;
     }
     .bi-person-fill {
         font-size: 3.5dvw;
@@ -249,6 +303,10 @@ h1 {
         color: #FF0F7B !important;
         transition: 1s;
     }
+    .req-rec {
+        border-top: 0px;
+        border-left: 2px solid #FFFFFF ;
+    }
 }
 
 
@@ -266,6 +324,9 @@ h1 {
     }
     h1 {
         font-size: 4dvw;
+    }
+    .back-arrow {
+        width: 70px;
     }
     .card-title {
         font-size: 2dvw;
@@ -300,13 +361,17 @@ h1 {
         position: absolute;
         display: flex;
         width: 100%;
-        height: 13dvw;
+        height: 11.6dvw;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     .star-hover:hover {
         opacity: 100%;
         background-color: #272727ab;
+    }
+    .favorite-icon {
+        width: 100px !important;
     }
 } 
 
@@ -314,6 +379,12 @@ h1 {
 @media (min-width: 1440px) {
     .aside:hover {
         width: 28dvw;
+    }
+    .back-arrow {
+        width: 90px;
+    }
+    .favorite-icon {
+        width: 120px !important;
     }
 }
 

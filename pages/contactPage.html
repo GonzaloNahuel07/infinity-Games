@@ -1,163 +1,371 @@
 <!DOCTYPE html>
 <html lang="es-AR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/contactPage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/logo/logoIG.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/contactPage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/navbarFooterStyles.css">
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
-        crossorigin="anonymous">
-        <link 
-            rel="stylesheet" 
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/navbarFooterStyles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>Contáctanos</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- HEADER -->
-        <header class="row fixed-top justify-content-between">
-            <!-- NAVBAR -->
-            <nav class="navbar blue fixed-top w-100">
-                <!-- MENU -->
-                <div class="burger-bg container-fluid opacity-75 d-flex">
-                    <button class="navbar-toggler fs-1 mx-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="burguer bi bi-list text-light" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                        </svg>
-                    </button>
-                    <div class="offcanvas blue offcanvas-start fs-1" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white page-title" id="offcanvasNavbarLabel">INFINITY GAMES</h5>
-                            <button type="button" class="btn-close bg-pink" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body d-flex">
-                            <ul class="navbar-nav justify-content-start d-flex flex-row">
-                                <div class="p-md-4 d-flex flex-column">
-                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="../index.html">INICIO</a>
-                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="storeUser.html">TIENDA</a>
-                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./storeUser.html">BIBLIOTECA</a>
-                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="#">CONTACTO</a>
-                                    <a class="link-hover mt-2 text-white text-decoration-none fs-5" href="./aboutUs.html">ACERCA DE NOSOTROS</a>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>    
-                    <div class="header-title d-flex">
-                        <h1 class="title text-center text-white fs-3 d-none d-md-flex page-title title-hover">INFINITY GAMES</h1>
-                    </div>
-                    <div class="headerTitle d-flex flex-row align-items-center px-3">
-                        <div class="userButtons d-flex align-items-center">
-                            <i class="bi bi-person-fill text-light mx-1 fs-2 d-flex"></i>
-                            <a href="#" class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex">Iniciar Sesion</a>
-                            <div class="modalRegister">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Registrarse
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Modal -->
-        <div class="modal fade border-pink" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header blue border-pink">
-                <h1 class="modal-title fs-5 text-center text-light" id="exampleModalLabel">REGISTRARSE</h1>
-                <button type="button" class="btn-close bg-pink" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body blue border-pink">
-                <div class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center">
-                        <div class="newUserName mb-3 d-flex justify-content-center align-items-center">
-                            <input
-                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
-                                type="text" 
-                                name="newUserName" 
-                                id="newUserName" 
-                                placeholder="Nombre y Apellido">
-                        </div>
-                        <div class="newUserNickname mb-3 d-flex justify-content-center align-items-center">
-                            <input 
-                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
-                                type="text" 
-                                name="userNickName" 
-                                id="newUserNickName"
-                                placeholder="Nombre de Usuario">
-                        </div>
-                        <div class="newUserEmail mb-3 d-flex justify-content-center align-items-center">
-                            <input 
-                                class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
-                                type="email" 
-                                name="newUserEmail" 
-                                id="newUserEmail"
-                                placeholder="Correo electronico">
-                        </div>
-                        <div class="newUserPassword mb-3 d-flex justify-content-center align-items-center">
-                            <input 
-                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
-                                type="password" 
-                                name="newUserPasword" 
-                                id="newUserPasword"
-                                placeholder="Contraseña">
-                        </div>
-                        <div class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center">
-                            <input 
-                                class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
-                                type="password" 
-                                name="newUserPaswordConfirm" 
-                                id="newUserPaswordConfirm"
-                                placeholder="Repetir contraseña">
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer blue border-pink">
-                <button type="button" class="btn btn-light text-dark btn-hover-2">Registrarse</button>
-                </div>
+    <header class="row fixed-top justify-content-between">
+      <!-- NAVBAR -->
+      <nav class="navbar blue fixed-top w-100">
+        <!-- MENU -->
+        <div class="burger-bg container-fluid opacity-100 d-flex">
+          <button
+            class="navbar-toggler fs-1 mx-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="burguer bi bi-list text-light"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </button>
+          <div
+            class="offcanvas blue w-50 offcanvas-start fs-1"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title text-white page-title"
+                id="offcanvasNavbarLabel"
+              >
+                INFINITY GAMES
+              </h5>
+              <button
+                type="button"
+                class="btn-close bg-pink"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="offcanvas-body d-flex">
+              <ul class="navbar-nav justify-content-start d-flex flex-row">
+                <div class="p-md-4 d-flex flex-column">
+                  <a
+                    class="link-hover mt-2 text-white text-decoration-none fs-5"
+                    href="../index.html"
+                    >INICIO</a
+                  >
+                  <a
+                    class="link-hover mt-2 text-white text-decoration-none fs-5"
+                    href="./loginPage.html"
+                    >TIENDA</a
+                  >
+                  <a
+                    class="link-hover mt-2 text-white text-decoration-none fs-5"
+                    href="./error404.html"
+                    >BIBLIOTECA</a
+                  >
+                  <a
+                    class="link-hover mt-2 text-white text-decoration-none fs-5"
+                    href="./contactPage.html"
+                    >CONTACTO</a
+                  >
+                  <a
+                    class="link-hover mt-2 text-white text-decoration-none fs-5"
+                    href="./aboutUs.html"
+                    >ACERCA DE NOSOTROS</a
+                  >
+                </div>
+              </ul>
             </div>
+          </div>
+          <div class="header-title d-flex">
+            <h1
+              class="title text-center text-white fs-3 d-none d-md-flex page-title title-hover"
+            >
+              INFINITY GAMES
+            </h1>
+          </div>
+          <div class="headerTitle d-flex flex-row align-items-center px-3">
+            <div class="userButtons d-flex align-items-center">
+              <a href="./loginPage.html" class="bi text-decoration-none bi-person-fill text-light mx-1 fs-2 d-flex"></a>
+              <a
+                id="login-button"
+                href="./loginPage.html"
+                class="link-hover text-decoration-none text-light col-6 d-none d-md-none d-lg-flex"
+                >Iniciar Sesion</a
+              >
+              <div class="modalRegister">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn-light btn-hover text-light bg-pink px-4 py-2 d-none d-md-flex"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Registrarse
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade border-pink"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div id="formModal" class="modal-content">
+          <div class="modal-header blue border-pink">
+            <h1
+              class="modal-title fs-5 text-center text-light"
+              id="exampleModalLabel"
+            >
+              REGISTRARSE
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-pink"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body blue border-pink">
+            <div
+              class="form d-flex flex-column col-lg-4 p-4 justify-content-center align-items-lg-start align-items-center w-100"
+            >
+              <div
+                class="newUserName mb-3 d-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                  type="text"
+                  name="newUserName"
+                  id="newUserName"
+                  placeholder="Nombre y Apellido"
+                />
+                <br />
+              </div>
+              <p class="text-danger d-none" id="alertName"></p>
+              <div
+                class="newUserNickname mb-3 d-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                  type="text"
+                  name="userNickName"
+                  id="newUserNickName"
+                  value=""
+                  placeholder="Nombre de Usuario"
+                />
+              </div>
+              <p class="text-danger d-none" id="alertNickName"></p>
+              <div
+                class="newUserEmail mb-3 d-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="placeholder-hover input-width invalid d-flex text-center text-lg-start text-light border-pink bg-input"
+                  type="email"
+                  name="newUserEmail"
+                  id="newUserEmail"
+                  placeholder="Correo electronico"
+                />
+              </div>
+              <p class="text-danger d-none" id="alertEmail"></p>
+              <div
+                class="newUserPassword mb-3 d-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                  type="password"
+                  name="newUserPassword"
+                  id="newUserPassword"
+                  placeholder="Contraseña"
+                />
+              </div>
+              <p class="text-danger d-none" id="alertPassword"></p>
+              <div
+                class="newUserConfirmPassword mb-3 d-flex justify-content-center align-items-center"
+              >
+                <input
+                  class="placeholder-hover input-width d-flex text-center text-lg-start text-light border-pink bg-input"
+                  type="password"
+                  name="newUserPasswordConfirm"
+                  id="newUserPasswordConfirm"
+                  placeholder="Repetir contraseña"
+                />
+              </div>
+              <p class="text-danger d-none" id="alertPasswordConfirm"></p>
+            </div>
+          </div>
+
+          <div
+            class="modal-footer blue border-pink d-flex justify-content-center"
+          >
+            <button
+              id="submitRegister"
+              type="button"
+              class="btn btn-light text-dark btn-hover-2 col-8"
+              data-bs-dismiss=""
+              aria-label=""
+            >
+              Registrarse
+            </button>
+            <br />
+            <p
+              id="successForm"
+              class="text-center blue pink pb-1 col-12 mt-2"
+            ></p>
+            <p
+              id="successForm"
+              class="text-center blue pink pb-1 col-12 mt-2 d-none alertUserEx"
+            >
+              Usuario ya existente, inicie sesion
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="section-contact">
-        <h2 class="section-contact--title">CONTACTO</h2>
-        <div class="section-contact--container">
-            <form class="container-form" action="">
-                <input class="container-form--input placeholder-hover" required type="text" placeholder="Nombre">
-                <input class="container-form--input placeholder-hover" required type="text" placeholder="Apellido">
-                <input class="container-form--input placeholder-hover" required type="email"placeholder="Correo Electrónico">
-                <input class="container-form--input placeholder-hover" required type="text"  placeholder="Teléfono" >
-                <textarea class="container-form--textarea placeholder-hover" required placeholder="Comentario" cols="30" rows="10"></textarea>
-                <button class="container-form--btn btn-hover-2" type="submit">Envíar</button>
-            </form>
-            <div class="container-map">
-                <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=caballito&t=&z=10&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-            </div>
+      <h2 class="section-contact--title">CONTACTO</h2>
+      <div class="section-contact--container">
+        <form class="container-form" action="">
+          <input
+            class="container-form--input placeholder-hover"
+            required
+            type="text"
+            placeholder="Nombre"
+          />
+          <input
+            class="container-form--input placeholder-hover"
+            required
+            type="text"
+            placeholder="Apellido"
+          />
+          <input
+            class="container-form--input placeholder-hover"
+            required
+            type="email"
+            placeholder="Correo Electrónico"
+          />
+          <input
+            class="container-form--input placeholder-hover"
+            required
+            type="text"
+            placeholder="Teléfono"
+          />
+          <textarea
+            class="container-form--textarea placeholder-hover"
+            required
+            placeholder="Comentario"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button class="container-form--btn btn-hover-2" type="submit">
+            Envíar
+          </button>
+        </form>
+        <div class="container-map">
+          <div class="gmap_canvas">
+            <iframe
+              width="100%"
+              height="100%"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=caballito&t=&z=10&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- FOOTER -->
     <footer class="row blue w-100">
-        <div class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center">
-            <div class="footer_title justify-content-center align-items-center d-flex flex-column">
-                <h1 class="text-center text-white mb-5 fs-md-1 fs-2 page-title">INFINITY GAMES</h1>
-                <a class="link-hover text-white mb-5 fs-3 text-decoration-none my-2" href="#">CONTACTO</a>
-            </div>
-            <div class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap">
-                <a class="media-icon--twitter bi bi-twitter text-white fs-1" href="https://twitter.com/?lang=es" target="blank"></a>
-                <a class="media-icon--facebook bi bi-facebook text-white fs-1" href="https://es-la.facebook.com/" target="_blank"></a>
-                <a class="media-icon--youtube bi bi-youtube text-white fs-1" href="https://www.youtube.com/" target="_blank"></a>
-                <a class="media-icon--instagram bi bi-instagram text-white fs-1" href="https://www.instagram.com/" target="_blank"></a>
-            </div>
+      <div
+        class="footer blue p-5 d-flex flex-column flex-lg-wrap justify-content-center align-items-center"
+      >
+        <div
+          class="footer_title justify-content-center align-items-center d-flex flex-column"
+        >
+          <h1 class="text-center text-white mb-5 fs-md-1 fs-2 page-title">
+            INFINITY GAMES
+          </h1>
+          <a
+            class="link-hover text-white mb-5 fs-3 text-decoration-none my-2"
+            href="#"
+            id="contact-button"
+            >CONTACTO</a
+          >
         </div>
+        <div
+          class="media d-lg-flex flex-column flex-md-row d-flex align-items-center justify-content-around my-2 w-100 flex-wrap"
+        >
+          <a
+            class="media-icon--twitter bi bi-twitter text-white fs-1"
+            href="https://twitter.com/?lang=es"
+            target="blank"
+          ></a>
+          <a
+            class="media-icon--facebook bi bi-facebook text-white fs-1"
+            href="https://es-la.facebook.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="media-icon--youtube bi bi-youtube text-white fs-1"
+            href="https://www.youtube.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="media-icon--instagram bi bi-instagram text-white fs-1"
+            href="https://www.instagram.com/"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
     </footer>
-    <script src="../js/app.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/login.js" type="module"></script>
+  </body>
 </html>

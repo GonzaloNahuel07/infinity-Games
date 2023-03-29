@@ -8,6 +8,9 @@ body {
     letter-spacing: 2px;
     background-color: #000123;
 }
+::placeholder{
+    color: white;
+}
 .register-btn {
     margin-top: 40%;
 }
@@ -131,8 +134,8 @@ body {
     skew(-20deg);
 }
 .btn-hover-2:hover{
-    background: #FF0F7B;
-    border: black solid 1px;
+    background: #FF0F7B !important;
+    border: black solid 1px !important;
 }
 .placeholder-hover{
     position: relative;
